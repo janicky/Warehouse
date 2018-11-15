@@ -8,5 +8,6 @@ namespace Warehouse
 {
     class DataRepository
     {
+        private DataContext dataContext;
     }
 }
