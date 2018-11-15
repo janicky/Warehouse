@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    class ProductInfo
+    class Event
     {
-        private string description;
-        private DateTimeOffset ;
-        
     }
 }
