@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    class Event
+    class Order
     {
+        private Employee employee;
+        private DateTimeOffset orderDate;
+        private double countPrice;
+        private int count;
     }
 }

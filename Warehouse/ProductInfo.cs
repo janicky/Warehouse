@@ -9,7 +9,9 @@ namespace Warehouse
     class ProductInfo
     {
         private string description;
-        private DateTimeOffset ;
+        private DateTimeOffset addDate;
+        private double price;
+        private int count;
         
     }
 }
