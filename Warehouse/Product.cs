@@ -19,5 +19,13 @@ namespace Warehouse {
             this.weight = weight;
         }
 
+        public string getName() {
+            return name;
+        }
+
+        public double getWeight() {
+            return weight;
+        }
+
     }
 }
