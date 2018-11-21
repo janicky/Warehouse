@@ -12,6 +12,7 @@ namespace Warehouse {
         private int id;
         private string name;
         private double weight;
+        private List<ProductInfo> productInfos;
 
         public Product(string name, double weight) {
             id = index++;
@@ -25,6 +26,10 @@ namespace Warehouse {
 
         public double getWeight() {
             return weight;
+        }
+
+        public List<ProductInfo> getProductInfos() {
+            return productInfos;
         }
 
     }
