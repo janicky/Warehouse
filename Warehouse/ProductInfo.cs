@@ -9,10 +9,26 @@ namespace Warehouse
     class ProductInfo
     {
         private string description;
-        private DateTimeOffset addDate;
+        private DateTimeOffset createdAt;
         private double price;
         private int count;
         private Product product;
+
+        public string getDescription() {
+            return description;
+        }
+
+        public DateTimeOffset getCreatedAt() {
+            return createdAt;
+        }
+
+        public double getPrice() {
+            return price;
+        }
+
+        public int getCount() {
+            return count;
+        }
 
         public Product getProduct() {
             return product;
