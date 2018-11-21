@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    class ProductInfo
+    public class ProductInfo
     {
         private string description;
         private DateTimeOffset createdAt;

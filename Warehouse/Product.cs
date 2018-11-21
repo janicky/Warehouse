@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Warehouse {
-    class Product {
+    public class Product {
 
         private static int index = 0;
 
@@ -20,15 +20,15 @@ namespace Warehouse {
             this.weight = weight;
         }
 
-        public string getName() {
+        public string GetName() {
             return name;
         }
 
-        public double getWeight() {
+        public double GetWeight() {
             return weight;
         }
 
-        public List<ProductInfo> getProductInfos() {
+        public List<ProductInfo> GetProductInfos() {
             return productInfos;
         }
 
