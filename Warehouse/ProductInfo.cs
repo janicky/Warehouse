@@ -12,6 +12,10 @@ namespace Warehouse
         private DateTimeOffset addDate;
         private double price;
         private int count;
-        
+        private Product product;
+
+        public Product getProduct() {
+            return product;
+        }
     }
 }
