@@ -8,10 +8,10 @@ namespace Warehouse
 {
     public class DataRepository
     {
-        private DataService dataService;
+        private IDataService dataService;
         private DataContext dataContext;
 
-        public DataRepository(DataService dataService)
+        public DataRepository(IDataService dataService)
         {
             if (dataService == null)
                 throw new ArgumentNullException(nameof(dataService));

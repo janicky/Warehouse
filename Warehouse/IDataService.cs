@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Warehouse
-{
-    public class DataService : IDataService
-    {
+
+namespace Warehouse {
+    public interface IDataService {
 
     }
 }
