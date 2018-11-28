@@ -15,9 +15,9 @@ namespace Warehouse
 
         public Order(Employee employee, double price, int count){
             this.employee = employee;
-            this.orderDate = DateTimeOffset.Now;
-            this.countPrice = price;
+            this.price = price;
             this.count = count;
+            orderDate = DateTimeOffset.Now;
         }
     }
 }
