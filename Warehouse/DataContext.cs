@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse 
 {
-    class DataContext
+    public class DataContext
     {
         private List<Employee> employees;
         private Dictionary<int, Product> products;

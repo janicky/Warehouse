@@ -10,8 +10,9 @@ namespace Warehouse
     {
         private DataContext dataContext;
 
-        public DataRepository()
+        public DataRepository(DataContext dataContext)
         {
+            this.dataContext = dataContext;
 
         }
     }
