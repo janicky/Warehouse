@@ -15,6 +15,9 @@ namespace Warehouse.UnitTests
             var productCopy = new ProductCopy(product, "Opis zamowienia", 5, 1);
             var order = new Order(employee, productCopy, 10, 2);
 
+            //Assert
+            Assert.AreEqual(order.GetPrice(), 10);
+            Assert.AreEqual(order.GetCount(), 2);
 
 
         }

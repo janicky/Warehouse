@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    class Order
+    public class Order
     {
         private Employee employee;
         private ProductCopy productCopy;
