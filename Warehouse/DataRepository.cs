@@ -8,12 +8,15 @@ namespace Warehouse
 {
     public class DataRepository
     {
+        private DataService dataService;
         private DataContext dataContext;
 
-        public DataRepository(DataContext dataContext)
+        public DataRepository(DataService dataService)
         {
-            this.dataContext = dataContext;
+            if (dataService == null)
+                throw new ArgumentNullException(nameof(dataService));
 
+            this.dataService = dataService;
         }
     }
 }
