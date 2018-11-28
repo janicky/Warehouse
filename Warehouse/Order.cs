@@ -12,5 +12,12 @@ namespace Warehouse
         private DateTimeOffset orderDate;
         private double countPrice;
         private int count;
+
+        public Order(Employee employee, DateTimeOffset orderDate, double countPrice, int count){
+            this.employee = employee;
+            this.orderDate = orderDate;
+            this.countPrice = countPrice;
+            this.count = count;
+        }
     }
 }
