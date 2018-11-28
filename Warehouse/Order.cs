@@ -21,5 +21,16 @@ namespace Warehouse
             this.count = count;
             orderDate = DateTimeOffset.Now;
         }
+
+        public double GetPrice()
+        {
+            return price;
+        }
+
+        public int GetCount()
+        {
+            return count;
+        }
+
     }
 }

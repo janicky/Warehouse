@@ -15,6 +15,8 @@ namespace Warehouse.UnitTests
             var productCopy = new ProductCopy(product, "Opis zamowienia", 5, 1);
             var order = new Order(employee, productCopy, 10, 2);
 
+
+
         }
     }
 }
