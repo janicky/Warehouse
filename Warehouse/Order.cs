@@ -9,12 +9,14 @@ namespace Warehouse
     class Order
     {
         private Employee employee;
+        private ProductCopy productCopy;
         private DateTimeOffset orderDate;
         private double price;
         private int count;
 
-        public Order(Employee employee, double price, int count){
+        public Order(Employee employee, ProductCopy productCopy, double price, int count){
             this.employee = employee;
+            this.productCopy = productCopy;
             this.price = price;
             this.count = count;
             orderDate = DateTimeOffset.Now;
