@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    public class DataRepository
+    public class DataFill
     {
-        private DataContext dataContext;
 
-        public DataRepository()
-        {
-
-        }
     }
 }
