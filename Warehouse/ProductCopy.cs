@@ -8,18 +8,29 @@ namespace Warehouse
 {
     public class ProductCopy
     {
+        private Product product;
         private string description;
-        private DateTimeOffset createdAt;
         private double price;
         private int count;
-        private Product product;
+        
+        private Order order;
+        private DateTimeOffset createdAt;
+
+        public ProductCopy(Product product, string description, double price, int count) {
+            this.product = product;
+            this.description = description;
+            this.price = price;
+            this.count = count;
+            this.order = null;
+            this.createdAt = DateTimeOffset.Now;
+        }
+
+        public Product getProduct() {
+            return product;
+        }
 
         public string getDescription() {
             return description;
-        }
-
-        public DateTimeOffset getCreatedAt() {
-            return createdAt;
         }
 
         public double getPrice() {
@@ -30,8 +41,8 @@ namespace Warehouse
             return count;
         }
 
-        public Product getProduct() {
-            return product;
+        public DateTimeOffset getCreatedAt() {
+            return createdAt;
         }
     }
 }
