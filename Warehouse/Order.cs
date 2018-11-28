@@ -10,13 +10,13 @@ namespace Warehouse
     {
         private Employee employee;
         private DateTimeOffset orderDate;
-        private double countPrice;
+        private double price;
         private int count;
 
-        public Order(Employee employee, DateTimeOffset orderDate, double countPrice, int count){
+        public Order(Employee employee, double price, int count){
             this.employee = employee;
-            this.orderDate = orderDate;
-            this.countPrice = countPrice;
+            this.orderDate = DateTimeOffset.Now;
+            this.countPrice = price;
             this.count = count;
         }
     }
