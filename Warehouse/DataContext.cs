@@ -12,6 +12,6 @@ namespace Warehouse
         private List<Employee> employees;
         private Dictionary<int, Product> products;
         private ObservableCollection<Order> orders;
-        private ObservableCollection<ProductInfo> productsInformations;
+        private ObservableCollection<ProductCopy> productsInformations;
     }
 }
