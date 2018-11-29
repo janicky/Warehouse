@@ -8,6 +8,9 @@ namespace Warehouse
 {
     public class ProductCopy
     {
+        private static int index = 0;
+
+        private int id = index++;
         private Product product;
         private string description;
         private double price;
@@ -23,6 +26,10 @@ namespace Warehouse
             this.count = count;
             this.order = null;
             this.createdAt = DateTimeOffset.Now;
+        }
+
+        public int GetId() {
+            return id;
         }
 
         public Product getProduct() {
