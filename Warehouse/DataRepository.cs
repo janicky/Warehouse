@@ -9,7 +9,7 @@ namespace Warehouse
     public partial class DataRepository
     {
         private IDataSource dataSource;
-        private DataContext dataContext;
+        private DataContext dataContext = new DataContext();
 
         public DataRepository(IDataSource dataSource)
         {
