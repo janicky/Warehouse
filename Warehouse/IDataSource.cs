@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Warehouse {
     public interface IDataSource {
-
+        List<Employee> GetEmployees();
+        Dictionary<int, Product> GetProducts();
+        ObservableCollection<Order> GetOrders();
+        ObservableCollection<ProductCopy> productCopies();
     }
 }
