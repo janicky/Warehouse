@@ -10,6 +10,9 @@ namespace Warehouse
     public class ConstantDataSource : IDataSource {
         private List<Employee> employees = new List<Employee>();
         private Dictionary<int, Product> products = new Dictionary<int, Product>();
+        private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
+        private ObservableCollection<Order> orders = new ObservableCollection<Order>();
+
         public List<Employee> GetEmployees() {
             employees.Add(new Employee("Jan", "Kowalski"));
             return employees;
@@ -20,12 +23,15 @@ namespace Warehouse
             return products;
         }
 
-        public ObservableCollection<Order> GetOrders() {
-            throw new NotImplementedException();
+        public ObservableCollection<ProductCopy> GetProductCopies() {
+            productCopies.Add(new ProductCopy(products[0], "Opis 1", 12.2, 1));
+            return productCopies;
         }
 
-        public ObservableCollection<ProductCopy> productCopies() {
+        public ObservableCollection<Order> GetOrders() {
             throw new NotImplementedException();
+            // orders.Add(new Order(employees.ElementAt(0), );
         }
+
     }
 }
