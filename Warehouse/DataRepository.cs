@@ -11,12 +11,12 @@ namespace Warehouse
         private IDataSource dataSource;
         private DataContext dataContext;
 
-        public DataRepository(IDataSource dataService)
+        public DataRepository(IDataSource dataSource)
         {
-            if (dataService == null)
-                throw new ArgumentNullException(nameof(dataService));
+            if (dataSource == null)
+                throw new ArgumentNullException(nameof(dataSource));
 
-            this.dataSource = dataService;
+            this.dataSource = dataSource;
         }
 
         public void Add()
