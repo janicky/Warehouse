@@ -31,5 +31,15 @@ namespace Warehouse
         public string GetLastName(){
             return lastName;
         }
+
+        public void SetfirstName(string firstName)
+        {
+            this.firstName = firstName;
+        }
+
+        public void SetlastName(string lastName)
+        {
+            this.lastName = lastName;
+        }
     }
 }
