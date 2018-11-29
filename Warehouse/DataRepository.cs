@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    public class DataRepository
+    public partial class DataRepository
     {
         private IDataSource dataSource;
         private DataContext dataContext;
@@ -29,41 +29,6 @@ namespace Warehouse
             dataContext.productCopies = dataSource.GetProductCopies();
             // Fill orders collection
             dataContext.orders = dataSource.GetOrders();
-        }
-
-        // Employee CRUD
-        public void AddEmployee(Employee employee) {
-            dataContext.employees.Add(employee);
-        }
-
-        public Employee GetEmployeeByIndex(int index) {
-            try {
-                return dataContext.employees.ElementAt(index);
-            } catch (Exception) {
-                return null;
-            }
-        }
-
-        public Employee GetEmployeeById(int id) {
-            try {
-                return dataContext.employees.First(e => e.GetId() == id);
-            } catch (Exception) {
-                return null;
-            }
-        }
-
-        public List<Employee> GetAllEmployees() {
-            return dataContext.employees;
-        }
-
-        public void Update()
-        {
-            
-        }
-
-        public void Delete()
-        {
-
         }
     }
 }
