@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Warehouse {
     class Initializer {
         public Initializer() {
-            ConstantData dataService = new ConstantData();
+            ConstantDataSource dataService = new ConstantDataSource();
             new DataRepository(dataService);
         }
     }

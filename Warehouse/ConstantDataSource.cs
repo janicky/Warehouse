@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace Warehouse {
-    public interface IDataAPI {
+namespace Warehouse
+{
+    public class ConstantDataSource : IDataSource
+    {
 
     }
 }
