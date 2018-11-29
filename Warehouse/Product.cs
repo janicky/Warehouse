@@ -32,5 +32,15 @@ namespace Warehouse {
             return productInfos;
         }
 
+        public void SetName(string name)
+        {
+            this.name = name;
+        }
+
+        public void SetWeight(double weight)
+        {
+            this.weight = weight;
+        }
+
     }
 }
