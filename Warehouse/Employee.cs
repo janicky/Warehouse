@@ -41,5 +41,19 @@ namespace Warehouse
         {
             this.lastName = lastName;
         }
+
+        public override bool Equals(object obj) {
+            var item = obj as Employee;
+            if (item == null) {
+                return false;
+            }
+            return id == item.GetId() &&
+                   firstName.Equals(item.GetFirstName()) &&
+                   lastName.Equals(item.GetLastName());
+        }
+
+        public override int GetHashCode() {
+            return id.GetHashCode();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace Warehouse {
                 return dataContext.employees.ElementAt(index);
             }
             catch (Exception) {
-                throw new NotImplementedException();
+                return null;
             }
         }
 
@@ -25,7 +25,7 @@ namespace Warehouse {
                 return dataContext.employees.First(e => e.GetId() == id);
             }
             catch (Exception) {
-                throw new NotImplementedException();
+                return null;
             }
         }
 
