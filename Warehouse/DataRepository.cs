@@ -31,14 +31,25 @@ namespace Warehouse
             dataContext.orders = dataSource.GetOrders();
         }
 
-        public void Add()
-        {
-
+        // Employee CRUD
+        public void AddEmployee(Employee employee) {
+            dataContext.employees.Add(employee);
         }
 
-        public void Get()
-        {
-            
+        public Employee GetEmployeeByIndex(int index) {
+            try {
+                return dataContext.employees.ElementAt(index);
+            } catch (Exception) {
+                return null;
+            }
+        }
+
+        public Employee GetEmployeeById(int id) {
+            try {
+                return dataContext.employees.First(e => e.GetId() == id);
+            } catch (Exception) {
+                return null;
+            }
         }
 
         public void GetAll()
