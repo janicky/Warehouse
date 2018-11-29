@@ -43,14 +43,14 @@
   <ItemGroup>
     <Compile Include="DataContext.cs" />
     <Compile Include="DataRepository.cs" />
-    <Compile Include="IDataService.cs" />
+    <Compile Include="IDataAPI.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="ProductCopy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DataFill.cs" />
+    <Compile Include="ConstantData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 
 namespace Warehouse {
-    public interface IDataService {
+    public interface IDataAPI {
 
     }
 }
