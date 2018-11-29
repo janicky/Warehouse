@@ -24,5 +24,14 @@ namespace Warehouse
             return id;
         }
 
+        public string GetFirstName(){
+            return firstName;
+        }
+
+        public string GetLastName(){
+            return lastname;
+        }
+
+
     }
 }
