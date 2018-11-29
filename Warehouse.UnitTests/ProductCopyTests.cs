@@ -19,9 +19,9 @@ namespace Warehouse.UnitTests {
             // ...
 
             // Assert
-            Assert.AreEqual(productCopy.getDescription(), description);
-            Assert.AreEqual(productCopy.getPrice(), price);
-            Assert.AreEqual(productCopy.getCount(), 1);
+            Assert.AreEqual(productCopy.GetDescription(), description);
+            Assert.AreEqual(productCopy.GetPrice(), price);
+            Assert.AreEqual(productCopy.GetCount(), 1);
         }
     }
 }
