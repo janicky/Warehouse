@@ -29,9 +29,7 @@ namespace Warehouse
         }
 
         public string GetLastName(){
-            return lastname;
+            return lastName;
         }
-
-
     }
 }
