@@ -13,23 +13,44 @@ namespace Warehouse
         private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
         private ObservableCollection<Order> orders = new ObservableCollection<Order>();
 
-        public List<Employee> GetEmployees() {
+        public ConstantDataSource() {
+            FillEmployees();
+            FillProducts();
+            FillProductCopies();
+            FillOrders();
+        }
+
+        // Data fill
+        private void FillEmployees() {
             employees.Add(new Employee("Jan", "Kowalski"));
+        }
+
+        private void FillProducts() {
+            products.Add(1, new Product("Monitor", 4.5));
+        }
+
+        private void FillProductCopies() {
+            productCopies.Add(new ProductCopy(products[0], "Opis 1", 12.2, 1));
+        }
+
+        private void FillOrders() {
+            orders.Add(new Order(employees[0], productCopies[0], 12.0, 1));
+        }
+
+        // Getters
+        public List<Employee> GetEmployees() {
             return employees;
         }
 
         public Dictionary<int, Product> GetProducts() {
-            products.Add(1, new Product("Monitor", 4.5));
             return products;
         }
 
         public ObservableCollection<ProductCopy> GetProductCopies() {
-            productCopies.Add(new ProductCopy(products[0], "Opis 1", 12.2, 1));
             return productCopies;
         }
 
         public ObservableCollection<Order> GetOrders() {
-            orders.Add(new Order(employees[0], productCopies[0], 12.0, 1);
             return orders;
         }
 
