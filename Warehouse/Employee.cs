@@ -32,12 +32,12 @@ namespace Warehouse
             return lastName;
         }
 
-        public void SetfirstName(string firstName)
+        public void SetFirstName(string firstName)
         {
             this.firstName = firstName;
         }
 
-        public void SetlastName(string lastName)
+        public void SetLastName(string lastName)
         {
             this.lastName = lastName;
         }
