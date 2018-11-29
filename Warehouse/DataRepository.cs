@@ -18,5 +18,30 @@ namespace Warehouse
 
             this.dataService = dataService;
         }
+
+        public void Add()
+        {
+
+        }
+
+        public void Get()
+        {
+            
+        }
+
+        public void GetAll()
+        {
+            
+        }
+
+        public void Update()
+        {
+            
+        }
+
+        public void Delete()
+        {
+
+        }
     }
 }
