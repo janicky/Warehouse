@@ -33,9 +33,9 @@ namespace Warehouse {
 
         public void DeleteProduct(Product product) {
             try {
-                Product deletingProduct = GetProductById(product.GetId());
-                //bool deleted = dataContext.products.Remove(deletingProduct);
-                //if (!deleted) throw new Exception();
+                var deletingProduct = dataContext.products.First(p => p.Value.GetId() == product.GetId());
+                bool deleted = dataContext.products.Remove(deletingProduct.Key);
+                if (!deleted) throw new Exception();
             }
             catch {
                 throw new NotImplementedException();
