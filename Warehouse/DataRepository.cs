@@ -15,8 +15,20 @@ namespace Warehouse
         {
             if (dataSource == null)
                 throw new ArgumentNullException(nameof(dataSource));
-
             this.dataSource = dataSource;
+            // Fill data repository using data source
+            fillRepository();
+        }
+
+        private void fillRepository() {
+            // Fill employees collection
+            dataContext.employees = dataSource.GetEmployees();
+            // Fill products collection
+            dataContext.products = dataSource.GetProducts();
+            // Fill product copies collection
+            dataContext.productCopies = dataSource.GetProductCopies();
+            // Fill orders collection
+            dataContext.orders = dataSource.GetOrders();
         }
 
         public void Add()
