@@ -20,6 +20,11 @@ namespace Warehouse {
             this.weight = weight;
         }
 
+        public int GetId()
+        {
+            return id;
+        }
+
         public string GetName() {
             return name;
         }
