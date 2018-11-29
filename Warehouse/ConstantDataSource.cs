@@ -29,8 +29,8 @@ namespace Warehouse
         }
 
         public ObservableCollection<Order> GetOrders() {
-            throw new NotImplementedException();
-            // orders.Add(new Order(employees.ElementAt(0), );
+            orders.Add(new Order(employees[0], productCopies[0], 12.0, 1);
+            return orders;
         }
 
     }
