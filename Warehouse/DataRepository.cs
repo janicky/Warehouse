@@ -52,9 +52,8 @@ namespace Warehouse
             }
         }
 
-        public void GetAll()
-        {
-            
+        public List<Employee> GetAllEmployees() {
+            return dataContext.employees;
         }
 
         public void Update()
