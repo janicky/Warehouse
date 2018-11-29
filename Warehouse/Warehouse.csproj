@@ -45,6 +45,7 @@
     <Compile Include="DataRepository.cs" />
     <Compile Include="DataRepository\EmployeesRepository.cs" />
     <Compile Include="DataRepository\ProductsRepository.cs" />
+    <Compile Include="DataRepository\ProductCopiesRepository.cs" />
     <Compile Include="IDataSource.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Order.cs" />
