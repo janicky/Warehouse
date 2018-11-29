@@ -10,7 +10,7 @@ namespace Warehouse {
     public interface IDataSource {
         List<Employee> GetEmployees();
         Dictionary<int, Product> GetProducts();
+        ObservableCollection<ProductCopy> GetProductCopies();
         ObservableCollection<Order> GetOrders();
-        ObservableCollection<ProductCopy> productCopies();
     }
 }
