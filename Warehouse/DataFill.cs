@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    public class DataService : IDataService
+    public class DataFill : IDataService
     {
 
     }
