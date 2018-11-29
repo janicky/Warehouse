@@ -20,5 +20,9 @@ namespace Warehouse
             this.lastName = lastName;
         }
 
+        public int GetId() {
+            return id;
+        }
+
     }
 }
