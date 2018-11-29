@@ -9,9 +9,9 @@ namespace Warehouse
 {
     public class DataContext
     {
-        private List<Employee> employees;
-        private Dictionary<int, Product> products;
-        private ObservableCollection<Order> orders;
-        private ObservableCollection<ProductCopy> productsInformations;
+        public List<Employee> employees;
+        public Dictionary<int, Product> products;
+        public ObservableCollection<Order> orders;
+        public ObservableCollection<ProductCopy> productsInformations;
     }
 }
