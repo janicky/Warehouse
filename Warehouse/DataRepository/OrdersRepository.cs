@@ -31,5 +31,14 @@ namespace Warehouse {
                 updatingOrder.SetCount(order.GetCount());
             }
         }
+
+        public void DeleteOrder(Order order) {
+            try {
+                bool deleted = dataContext.orders.Remove(order);
+                if (!deleted) throw new Exception();
+            } catch(Exception) {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
