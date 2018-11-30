@@ -53,5 +53,17 @@ namespace Warehouse.UnitTests {
             Assert.AreEqual(copiesBefore, 0);
             Assert.AreEqual(product.GetProductCopies().Count, 1);
         }
+
+        [TestMethod]
+        public void Product_AddAndRemoveProductCopy() {
+            // Arrange
+            ProductCopy productCopy = dataSource.GetProductCopies()[0];
+            int copiesBefore = product.GetProductCopies().Count;
+            // Act
+            product.AddProductCopy(productCopy);
+            // Assert
+            Assert.AreEqual(copiesBefore, 0);
+            Assert.AreEqual(product.GetProductCopies().Count, 1);
+        }
     }
 }
