@@ -4,20 +4,25 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Warehouse.UnitTests
 {
     [TestClass]
-    public class OrderTests
-    {
-        [TestMethod]
-        public void TestMethod1()
-        {
-            // Arrange
-            var employee = new Employee("Franek", "Janicky");
-            var product = new Product("Konserwa", 100);
-            var productCopy = new ProductCopy(product, "Opis zamowienia", 5, 1);
-            var order = new Order(employee, productCopy, 10, 2);
+    public class OrderTests {
+        private DataRepository dataRepository;
 
+        [TestInitialize]
+        public void TestInitialize() {
+            Order.ResetIndex();
+            dataRepository = new DataRepository(new TestDataSource());
+        }
+
+        [TestMethod]
+        public void Order_Getters()
+        {
+            //Arrange
+            Order order = dataRepository.GetOrderByIndex(0);
             //Assert
-            Assert.AreEqual(order.GetPrice(), 10);
-            Assert.AreEqual(order.GetCount(), 2);
+            Assert.AreEqual(order.GetEmployee(), dataRepository.GetEmployeeByIndex(0));
+            Assert.AreEqual(order.GetProductCopy(), dataRepository.GetProductCopyById(0));
+            Assert.AreEqual(order.GetPrice(), 12.0);
+            Assert.AreEqual(order.GetCount(), 1);
 
 
         }
