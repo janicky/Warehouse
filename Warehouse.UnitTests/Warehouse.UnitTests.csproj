@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="DataRepositoryTests\EmployeesRepositoryTest.cs" />
     <Compile Include="DataRepositoryTests\ProductsRepositoryTest.cs" />
+    <Compile Include="DataRepositoryTests\OrdersRepositoryTest.cs" />
     <Compile Include="ProductCopyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OrderTests.cs" />
