@@ -33,6 +33,28 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             Assert.AreEqual(product.GetWeight(), 4.5);
         }
 
-        
+        [TestMethod]
+        public void DataRepositoryProducts_UpdateElements() {
+            //Arrange
+            Product product = new Product(id: 0, name: "Drukarka", weight: 5);
+            //Act
+            dataRepository.UpdateProduct(product);
+            //Assert
+            Assert.AreEqual(product, dataRepository.GetProductById(0));
+        }
+
+        [TestMethod]
+        public void DataRepositoryProducts_AddAndDeleteElements() {
+            //Arrenge
+            Product Clock = new Product("Zegar", 1);
+            //Act
+            dataRepository.AddProduct(Clock);
+            Product firstCheck = dataRepository.GetProductByID(1);
+            dataRepository.DeleteProduct(Clock);
+            Product secondCheck = dataRepository.GetProductById(1);
+            //Assert
+            Assert.AreEqual(firstCheck, Clock);
+            Assert.IsNull(secondCheck);
+        }
     }
 }
