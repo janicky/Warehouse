@@ -65,5 +65,22 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             }
         }
 
+        [TestMethod]
+        public void DataRepositoryProductCopies_UpdateProductCopy() {
+            //Arrange
+            ProductCopy productCopy = new ProductCopy(
+                id: 0,
+                product: dataRepository.GetProductByIndex(1),
+                description: "Granit",
+                price: 12.0,
+                count: 1
+            );
+            //Act
+            dataRepository.UpdateProductCopy(productCopy);
+            //Assert
+            Assert.AreEqual(dataRepository.GetProductCopyByIndex(0), productCopy);
+
+        }
+
     }
 }
