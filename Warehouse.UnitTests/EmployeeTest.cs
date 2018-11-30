@@ -11,6 +11,7 @@ namespace Warehouse.UnitTests {
 
         [TestInitialize]
         public void TestInitialize() {
+            Employee.ResetIndex();
             dataSource = new TestDataSource();
         }
 
