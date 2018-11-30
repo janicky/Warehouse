@@ -24,5 +24,14 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
                 Assert.Fail();
             }
         }
+
+        [TestMethod]
+        public void DataRepositoryProductCopies_GetProductCopyById() {
+            //Arrenge
+            ProductCopy productCopyFromDataSource = dataRepository.GetAllProductCopies()[0];
+            ProductCopy productCopy = dataRepository.GetProductCopyByIndex(0);
+            //Assert
+            Assert.AreEqual(productCopy, productCopyFromDataSource);
+        }
     }
 }
