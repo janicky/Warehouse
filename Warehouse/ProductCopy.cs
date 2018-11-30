@@ -78,5 +78,25 @@ namespace Warehouse
         public void Updated() {
             updatedAt = DateTimeOffset.Now;
         }
+
+        public override bool Equals(object obj) {
+            var item = obj as ProductCopy;
+            if (item == null) {
+                return false;
+            }
+
+            return id == item.GetId() && 
+                   description.Equals(item.GetDescription()) &&
+                   price.Equals(item.GetPrice()) &&
+                   count.Equals(item.GetCount());
+        }
+
+        public override int GetHashCode() {
+            return id.GetHashCode();
+        }
+
+        public override string ToString() {
+            return product.GetName() + " " + description;
+        }
     }
 }
