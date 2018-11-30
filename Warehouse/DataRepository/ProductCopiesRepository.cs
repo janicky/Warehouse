@@ -17,7 +17,7 @@ namespace Warehouse {
                 return dataContext.productCopies.ElementAt(index);
             }
             catch (Exception) {
-                throw new NotImplementedException();
+               return null;
             }
         }
 
@@ -26,7 +26,7 @@ namespace Warehouse {
                 return dataContext.productCopies.First(e => e.GetId() == id);
             }
             catch (Exception) {
-                throw new NotImplementedException();
+                return null;
             }
         }
 
