@@ -38,5 +38,12 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
                 Assert.Fail();
             }
         }
+
+        [TestMethod]
+        public void DataRepositoryProductCopies_GetAllproductCopies() {
+            //Assert
+            Assert.AreEqual(dataRepository.GetAllProductCopies().Count, 1);
+        }
+        
     }
 }
