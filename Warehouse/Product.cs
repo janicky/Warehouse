@@ -12,7 +12,7 @@ namespace Warehouse {
         private int id;
         private string name;
         private double weight;
-        private List<ProductCopy> productInfos;
+        private List<ProductCopy> productCopies;
 
         public Product(string name, double weight) {
             id = index++;
@@ -33,8 +33,8 @@ namespace Warehouse {
             return weight;
         }
 
-        public List<ProductCopy> GetProductInfos() {
-            return productInfos;
+        public List<ProductCopy> GetProductCopies() {
+            return productCopies;
         }
 
         public void SetName(string name)
@@ -47,5 +47,20 @@ namespace Warehouse {
             this.weight = weight;
         }
 
+        public void SetProductCopies(List<ProductCopy> productCopies) {
+            this.productCopies = productCopies;
+        }
+
+        public void AddProductCopy(ProductCopy productCopy) {
+            productCopies.Add(productCopy);
+        }
+
+        public void RemoveProductCopy(ProductCopy productCopy) {
+            try {
+                bool deleted = productCopies.Remove(productCopy);
+            } catch (Exception) {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

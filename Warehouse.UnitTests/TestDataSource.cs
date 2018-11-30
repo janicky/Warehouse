@@ -25,11 +25,11 @@ namespace Warehouse.UnitTests {
         }
 
         private void FillProducts() {
-            products.Add(1, new Product("Monitor", 4.5));
+            products.Add(1, new Product("Synergistic Bronze Watch", 0.1));
         }
 
         private void FillProductCopies() {
-            productCopies.Add(new ProductCopy(products[1], "Opis 1", 12.2, 1));
+            productCopies.Add(new ProductCopy(products[1], "Sandcrawler", 12.2, 1));
         }
 
         private void FillOrders() {
