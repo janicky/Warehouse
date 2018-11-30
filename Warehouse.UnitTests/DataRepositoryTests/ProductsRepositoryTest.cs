@@ -18,25 +18,25 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
         }
 
         [TestMethod]
-        public void DataRepositoryProducts_GetElemmentByIndex() {
+        public void DataRepositoryProducts_GetElementByIndex() {
             //Assert
             Product product = dataRepository.GetProductByIndex(0);
-            Assert.AreEqual(product.GetName(), "Monitor");
-            Assert.AreEqual(product.GetWeight(), 4.5);
+            Assert.AreEqual(product.GetName(), "Synergistic Bronze Watch");
+            Assert.AreEqual(product.GetWeight(), 0.1);
         }
 
         [TestMethod]
         public void DataRepositoryProducts_GetElementById() {
             //Assert
             Product product = dataRepository.GetProductById(0);
-            Assert.AreEqual(product.GetName(), "Monitor");
-            Assert.AreEqual(product.GetWeight(), 4.5);
+            Assert.AreEqual(product.GetName(), "Synergistic Bronze Watch");
+            Assert.AreEqual(product.GetWeight(), 0.1);
         }
 
         [TestMethod]
         public void DataRepositoryProducts_UpdateElements() {
             //Arrange
-            Product product = new Product(id: 0, name: "Drukarka", weight: 5);
+            Product product = new Product(name: "Awesome Concrete Watch", weight: 5);
             //Act
             dataRepository.UpdateProduct(product);
             //Assert
@@ -48,8 +48,8 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             //Arrenge
             Product Clock = new Product("Zegar", 1);
             //Act
-            dataRepository.AddProduct(Clock);
-            Product firstCheck = dataRepository.GetProductByID(1);
+            dataRepository.AddProduct(1, Clock);
+            Product firstCheck = dataRepository.GetProductById(1);
             dataRepository.DeleteProduct(Clock);
             Product secondCheck = dataRepository.GetProductById(1);
             //Assert
