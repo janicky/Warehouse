@@ -26,6 +26,7 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             Employee employee = dataRepository.GetEmployeeByIndex(0);
             Assert.AreEqual(employee.GetFirstName(), "Anakin");
             Assert.AreEqual(employee.GetLastName(), "Skywalker");
+            
         }
 
         [TestMethod]

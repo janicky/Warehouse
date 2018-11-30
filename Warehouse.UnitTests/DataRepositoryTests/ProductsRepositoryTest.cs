@@ -8,6 +8,7 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
 
         [TestInitialize]
         public void TestInitialize() {
+            Product.ResetIndex();
             dataRepository = new DataRepository(new TestDataSource());
         }
 
@@ -46,14 +47,14 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
         [TestMethod]
         public void DataRepositoryProducts_AddAndDeleteElements() {
             //Arrenge
-            Product Clock = new Product("Zegar", 1);
+            Product clock = new Product("Rustic Granite Knife", 1);
             //Act
-            dataRepository.AddProduct(1, Clock);
-            Product firstCheck = dataRepository.GetProductById(1);
-            dataRepository.DeleteProduct(Clock);
-            Product secondCheck = dataRepository.GetProductById(1);
+            dataRepository.AddProduct(2, clock);
+            Product firstCheck = dataRepository.GetProductByIndex(2);
+            dataRepository.DeleteProduct(clock);
+            Product secondCheck = dataRepository.GetProductByIndex(2);
             //Assert
-            Assert.AreEqual(firstCheck, Clock);
+            Assert.AreEqual(firstCheck, clock);
             Assert.IsNull(secondCheck);
         }
     }
