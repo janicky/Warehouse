@@ -16,9 +16,13 @@ namespace Warehouse {
         private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
 
         public Product(string name, double weight, int id = -1) {
-            id = (id != -1 ? id : index++);
+            this.id = (id != -1 ? id : index++);
             this.name = name;
             this.weight = weight;
+        }
+
+        public static void ResetIndex() {
+            index = 0;
         }
 
         public int GetId()
