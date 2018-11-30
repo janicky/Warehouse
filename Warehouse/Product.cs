@@ -18,7 +18,7 @@ namespace Warehouse {
         public Product(string name, double weight, int id = -1) {
             this.id = (id != -1 ? id : index++);
             this.name = name;
-            this.weight = weight;
+            this.weight = (weight >= 0 ? weight : 0);
         }
 
         public static void ResetIndex() {
@@ -49,7 +49,7 @@ namespace Warehouse {
 
         public void SetWeight(double weight)
         {
-            this.weight = weight;
+            this.weight = (weight >= 0 ? weight : 0);
         }
 
         public void SetProductCopies(ObservableCollection<ProductCopy> productCopies) {
