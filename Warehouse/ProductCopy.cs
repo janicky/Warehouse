@@ -10,7 +10,7 @@ namespace Warehouse
     {
         private static int index = 0;
 
-        private int id = index++;
+        private int id;
         private Product product;
         private string description;
         private double price;
@@ -20,7 +20,8 @@ namespace Warehouse
         private DateTimeOffset createdAt;
         private DateTimeOffset updatedAt;
 
-        public ProductCopy(Product product, string description, double price, int count) {
+        public ProductCopy(Product product, string description, double price, int count, int id = -1) {
+            this.id = (id != -1 ? id : index++);
             this.product = product;
             this.description = description;
             this.price = price;
