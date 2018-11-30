@@ -34,6 +34,17 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
         }
 
         [TestMethod]
+        public void DataRepositoryEmployees_UpdateElement() {
+            // Arrange
+            Employee employee = new Employee(id: 0, firstName: "Anakin", lastName: "Calrissian");
+            // Act
+            dataRepository.UpdateEmployee(employee);
+            // Assert
+            Assert.AreEqual(employee, dataRepository.GetEmployeeById(0));
+
+        }
+
+        [TestMethod]
         public void DataRepositoryEmployees_AddAndDeleteElement() {
             // Arrange
             Employee DarthSidious = new Employee("Darth", "Sidious");

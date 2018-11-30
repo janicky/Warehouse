@@ -14,8 +14,8 @@ namespace Warehouse
         private string firstName;
         private string lastName;
 
-        public Employee(string firstName, string lastName) {
-            id = index++;
+        public Employee(string firstName, string lastName, int id = -1) {
+            this.id = (id != -1 ? id : index++);
             this.firstName = firstName;
             this.lastName = lastName;
         }
