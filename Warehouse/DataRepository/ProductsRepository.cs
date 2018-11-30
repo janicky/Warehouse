@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Warehouse {
     public partial class DataRepository {
         //CRUD methods for Products in this partial class
-        public void AddProduct(int id, Product product) {
-            dataContext.products.Add(id,product);
+        public void AddProduct(int index, Product product) {
+            dataContext.products.Add(index, product);
         }
 
         public Product GetProductByIndex(int index) {
@@ -20,7 +20,11 @@ namespace Warehouse {
         }
 
         public Product GetProductById(int id) {
-            return dataContext.products.Values.First(p => p.GetId() == id);
+            try {
+                return dataContext.products.Values.First(p => p.GetId() == id);
+            } catch (Exception) {
+                return null;
+            }
         }
 
         public Dictionary<int, Product> GetAllProducts() {
