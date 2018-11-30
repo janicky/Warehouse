@@ -23,5 +23,13 @@ namespace Warehouse {
         public ObservableCollection<Order> GetAllOrders() {
             return dataContext.orders;
         }
+
+        public void UpdateOrder(int index, Order order) {
+            Order updatingOrder = GetOrderByIndex(index);
+            if (updatingOrder != null) {
+                updatingOrder.SetPrice(order.GetPrice());
+                updatingOrder.SetCount(order.GetCount());
+            }
+        }
     }
 }
