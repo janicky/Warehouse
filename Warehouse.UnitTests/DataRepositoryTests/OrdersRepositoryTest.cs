@@ -37,5 +37,22 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             //Assert
             Assert.AreEqual(order, dataRepository.GetOrderByIndex(0));
         }
+
+        [TestMethod]
+        public void DataRepositoryOrders_AddAndDeleteOrders() {
+            //Arrange
+            Employee employee = new Employee(id: 0, firstName: "Anakin", lastName: "Calrissian");
+            Product product = new Product("Product name", 10.0);
+            ProductCopy productCopy = new ProductCopy(product, "description", 12, 1);
+            Order order = new Order(employee, productCopy, 12.0, 1);
+            //Act
+            dataRepository.AddOrder(order);
+            Order firstCheck = dataRepository.GetOrderByIndex(1);
+            dataRepository.DeleteOrder(order);
+            Order secondCheck = dataRepository.GetOrderByIndex(1);
+            //Assert
+            Assert.AreEqual(firstCheck, order);
+            Assert.IsNull(secondCheck);
+        }
     }
 }
