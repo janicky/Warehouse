@@ -17,6 +17,12 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             Assert.AreEqual(dataRepository.GetAllOrders().Count, 1);
         }
 
-        
+        [TestMethod]
+        public void DataRepositoryOrders_GetElementByIndex() {
+            Order order = dataRepository.GetOrderByIndex(0);
+            //Assert
+            Assert.AreEqual(order.GetPrice(), 12);
+            Assert.AreEqual(order.GetCount(), 1);
+        }
     }
 }
