@@ -64,6 +64,20 @@ namespace Warehouse {
             }
         }
 
+        public override bool Equals(object obj) {
+            var item = obj as Product;
+            if (item == null) {
+                return false;
+            }
+            return id == item.GetId() &&
+                   name.Equals(item.GetName()) &&
+                   weight == item.GetWeight();
+        }
+
+        public override int GetHashCode() {
+            return id.GetHashCode();
+        }
+
         public override string ToString() {
             return name;
         }
