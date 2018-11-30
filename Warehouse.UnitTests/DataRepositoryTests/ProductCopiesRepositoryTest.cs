@@ -6,7 +6,7 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
     public class ProductCopiesRepositoryTest {
         private DataRepository dataRepository;
 
-        [TestMethod]
+        [TestInitialize]
         public void TestInitialize() {
             dataRepository = new DataRepository(new TestDataSource());
         }
