@@ -19,6 +19,7 @@ namespace Warehouse.UnitTests
             //Arrange
             Order order = dataRepository.GetOrderByIndex(0);
             //Assert
+            Assert.AreEqual(order.GetId(), 0);
             Assert.AreEqual(order.GetEmployee(), dataRepository.GetEmployeeByIndex(0));
             Assert.AreEqual(order.GetProductCopy(), dataRepository.GetProductCopyById(0));
             Assert.AreEqual(order.GetPrice(), 12.0);
