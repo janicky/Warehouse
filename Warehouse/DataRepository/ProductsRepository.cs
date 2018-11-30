@@ -12,7 +12,11 @@ namespace Warehouse {
         }
 
         public Product GetProductByIndex(int index) {
-            return dataContext.products[index];
+            try {
+                return dataContext.products[index];
+            } catch(Exception) {
+                return null;
+            }
         }
 
         public Product GetProductById(int id) {

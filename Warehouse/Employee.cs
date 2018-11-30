@@ -20,6 +20,11 @@ namespace Warehouse
             this.lastName = lastName;
         }
 
+        // Reset index method for unit tests
+        public static void ResetIndex() {
+            index = 0;
+        }
+
         public int GetId() {
             return id;
         }
@@ -54,6 +59,10 @@ namespace Warehouse
 
         public override int GetHashCode() {
             return id.GetHashCode();
+        }
+
+        public override string ToString() {
+            return firstName + " " + lastName;
         }
     }
 }

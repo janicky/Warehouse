@@ -8,11 +8,14 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
 
         [TestInitialize]
         public void TestInitialize() {
+            Employee.ResetIndex();
             dataRepository = new DataRepository(new TestDataSource());
         }
 
         [TestMethod]
         public void DataRepositoryEmployees_ItemsExists() {
+            // Arrange
+            DataRepository dataRepository = new DataRepository(new TestDataSource());
             // Assert
             Assert.AreEqual(dataRepository.GetAllEmployees().Count, 1);
         }
@@ -27,8 +30,9 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
 
         [TestMethod]
         public void DataRepositoryEmployees_GetElementById() {
-            // Assert
+            // Arrange
             Employee employee = dataRepository.GetEmployeeById(0);
+            // Assert
             Assert.AreEqual(employee.GetFirstName(), "Anakin");
             Assert.AreEqual(employee.GetLastName(), "Skywalker");
         }
