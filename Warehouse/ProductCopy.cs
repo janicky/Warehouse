@@ -32,6 +32,10 @@ namespace Warehouse
 
         }
 
+        public static void ResetIndex() {
+            index = 0;
+        }
+
         public int GetId() {
             return id;
         }
