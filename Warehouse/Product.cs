@@ -63,5 +63,9 @@ namespace Warehouse {
                 throw new NotImplementedException();
             }
         }
+
+        public override string ToString() {
+            return name;
+        }
     }
 }
