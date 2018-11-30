@@ -8,6 +8,7 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
 
         [TestInitialize]
         public void TestInitialize() {
+            ProductCopy.ResetIndex();
             dataRepository = new DataRepository(new TestDataSource());
         }
 
