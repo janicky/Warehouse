@@ -8,18 +8,38 @@ namespace Warehouse
 {
     public class Order
     {
+        private static int index = 0;
+
+        private int id;
         private Employee employee;
         private ProductCopy productCopy;
         private DateTimeOffset orderDate;
         private double price;
         private int count;
 
-        public Order(Employee employee, ProductCopy productCopy, double price, int count){
+        public Order(Employee employee, ProductCopy productCopy, double price, int count, int id = -1){
+            this.id = (id != -1 ? id : index++);
             this.employee = employee;
             this.productCopy = productCopy;
             this.price = price;
             this.count = count;
             orderDate = DateTimeOffset.Now;
+        }
+
+        public static void ResetIndex() {
+            index = 0;
+        }
+
+        public int GetId() {
+            return id;
+        }
+
+        public Employee GetEmployee() {
+            return employee;
+        }
+
+        public ProductCopy GetProductCopy() {
+            return productCopy;
         }
 
         public double GetPrice()
@@ -38,6 +58,25 @@ namespace Warehouse
 
         public void SetCount(int count) {
             this.count = count;
+        }
+
+        public override bool Equals(object obj) {
+            var item = obj as Order;
+            if (item == null) {
+                return false;
+            }
+            return item.GetId() == id &&
+                   item.GetCount() == count &&
+                   item.GetEmployee() == employee &&
+                   item.GetProductCopy() == productCopy;
+        }
+
+        public override int GetHashCode() {
+            return id.GetHashCode();
+        }
+
+        public override string ToString() {
+            return id.ToString() + " " + employee.ToString() + " " + productCopy.ToString();
         }
     }
 }

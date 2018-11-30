@@ -20,12 +20,21 @@ namespace Warehouse {
             }
         }
 
+        public Order GetOrderById(int id) {
+            try {
+                return dataContext.orders.First(e => e.GetId() == id);
+            }
+            catch (Exception) {
+                return null;
+            }
+        }
+
         public ObservableCollection<Order> GetAllOrders() {
             return dataContext.orders;
         }
 
-        public void UpdateOrder(int index, Order order) {
-            Order updatingOrder = GetOrderByIndex(index);
+        public void UpdateOrder(Order order) {
+            Order updatingOrder = GetOrderById(order.GetId());
             if (updatingOrder != null) {
                 updatingOrder.SetPrice(order.GetPrice());
                 updatingOrder.SetCount(order.GetCount());

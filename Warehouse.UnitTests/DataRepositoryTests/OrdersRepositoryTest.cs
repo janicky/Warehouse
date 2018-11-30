@@ -8,6 +8,7 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
 
         [TestInitialize]
         public void TestInitialize() {
+            Order.ResetIndex();
             dataRepository = new DataRepository(new TestDataSource());
         }
 
@@ -28,14 +29,17 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
         [TestMethod]
         public void DataRepositoryOrders_UpdateOrder() {
             //Arrange
-            Employee employee = new Employee(id: 0, firstName: "Anakin", lastName: "Calrissian");
-            Product product = new Product("Product name", 10.0);
-            ProductCopy productCopy = new ProductCopy(product, "description", 12, 1);
-            Order order = new Order(employee, productCopy, 12.0, 1);
+            Order order = new Order(
+                id: 0,
+                employee: dataRepository.GetAllEmployees()[0], 
+                productCopy: dataRepository.GetAllProductCopies()[0], 
+                price: 12.0, 
+                count: 1
+            );
             //Act
-            dataRepository.UpdateOrder(0 ,order);
+            dataRepository.UpdateOrder(order);
             //Assert
-            Assert.AreEqual(order, dataRepository.GetOrderByIndex(0));
+            Assert.AreEqual(dataRepository.GetOrderByIndex(0), order);
         }
 
         [TestMethod]
