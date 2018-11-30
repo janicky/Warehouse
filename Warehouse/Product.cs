@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,7 +48,7 @@ namespace Warehouse {
             this.weight = weight;
         }
 
-        public void SetProductCopies(List<ProductCopy> productCopies) {
+        public void SetProductCopies(ObservableCollection<ProductCopy> productCopies) {
             this.productCopies = productCopies;
         }
 
