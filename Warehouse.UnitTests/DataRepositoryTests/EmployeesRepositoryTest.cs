@@ -41,7 +41,6 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             dataRepository.UpdateEmployee(employee);
             // Assert
             Assert.AreEqual(employee, dataRepository.GetEmployeeById(0));
-
         }
 
         [TestMethod]

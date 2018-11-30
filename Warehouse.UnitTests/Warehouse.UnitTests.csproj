@@ -54,6 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OrderTests.cs" />
     <Compile Include="TestDataSource.cs" />
+    <Compile Include="EmployeeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
