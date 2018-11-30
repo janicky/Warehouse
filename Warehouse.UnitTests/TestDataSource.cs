@@ -29,7 +29,7 @@ namespace Warehouse.UnitTests {
         }
 
         private void FillProductCopies() {
-            productCopies.Add(new ProductCopy(products[1], "Opis 1", 12.2, 1));
+            productCopies.Add(new ProductCopy(products[1], "Sandcrawler", 12.2, 1));
         }
 
         private void FillOrders() {
