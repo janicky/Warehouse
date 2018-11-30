@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace Warehouse {
         private int id;
         private string name;
         private double weight;
-        private List<ProductCopy> productCopies;
+        private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
 
         public Product(string name, double weight) {
             id = index++;
@@ -33,7 +34,7 @@ namespace Warehouse {
             return weight;
         }
 
-        public List<ProductCopy> GetProductCopies() {
+        public ObservableCollection<ProductCopy> GetProductCopies() {
             return productCopies;
         }
 
@@ -47,7 +48,7 @@ namespace Warehouse {
             this.weight = weight;
         }
 
-        public void SetProductCopies(List<ProductCopy> productCopies) {
+        public void SetProductCopies(ObservableCollection<ProductCopy> productCopies) {
             this.productCopies = productCopies;
         }
 
