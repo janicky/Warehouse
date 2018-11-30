@@ -11,6 +11,12 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             dataRepository = new DataRepository(new TestDataSource());
         }
 
+        [TestMethod]
+        public void DataRepositoryEmployees_ItemsExists() {
+            //Assert
+            Assert.AreEqual(dataRepository.GetAllProducts().Count, 1);
+        }
+
         
     }
 }
