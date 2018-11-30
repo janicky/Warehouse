@@ -17,6 +17,14 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             Assert.AreEqual(dataRepository.GetAllProducts().Count, 1);
         }
 
+        [TestMethod]
+        public void DataRepositoryProducts_GetElemmentByIndex() {
+            //Assert
+            Product product = dataRepository.GetProductByIndex(0);
+            Assert.AreEqual(product.GetName(), "Monitor");
+            Assert.AreEqual(product.GetWeight(), 4.5);
+        }
+
         
     }
 }
