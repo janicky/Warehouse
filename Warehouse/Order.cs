@@ -32,5 +32,12 @@ namespace Warehouse
             return count;
         }
 
+        public void SetPrice(double price) {
+            this.price = price;
+        }
+
+        public void SetCount(int count) {
+            this.count = count;
+        }
     }
 }
