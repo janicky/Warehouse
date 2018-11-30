@@ -20,7 +20,7 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
         [TestMethod]
         public void DataRepositoryProducts_GetElementByIndex() {
             //Assert
-            Product product = dataRepository.GetProductByIndex(0);
+            Product product = dataRepository.GetProductByIndex(1);
             Assert.AreEqual(product.GetName(), "Synergistic Bronze Watch");
             Assert.AreEqual(product.GetWeight(), 0.1);
         }
@@ -34,9 +34,9 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
         }
 
         [TestMethod]
-        public void DataRepositoryProducts_UpdateElements() {
+        public void DataRepositoryProducts_UpdateElement() {
             //Arrange
-            Product product = new Product(name: "Awesome Concrete Watch", weight: 5);
+            Product product = new Product(id: 0, name: "Awesome Concrete Watch", weight: 5);
             //Act
             dataRepository.UpdateProduct(product);
             //Assert

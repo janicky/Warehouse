@@ -15,8 +15,8 @@ namespace Warehouse {
         private double weight;
         private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
 
-        public Product(string name, double weight) {
-            id = index++;
+        public Product(string name, double weight, int id = -1) {
+            id = (id != -1 ? id : index++);
             this.name = name;
             this.weight = weight;
         }
