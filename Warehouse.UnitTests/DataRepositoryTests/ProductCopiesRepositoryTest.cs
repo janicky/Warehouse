@@ -44,6 +44,26 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             //Assert
             Assert.AreEqual(dataRepository.GetAllProductCopies().Count, 1);
         }
-        
+
+        [TestMethod]
+        public void DataRepositoryProductCopies_AddAndDeleteProductCopies() {
+            try {
+                //Arrange
+                ProductCopy productCopy = new ProductCopy(dataRepository.GetProductByIndex(1), "Heavy Duty Linen Plate", 7.8, 1);
+                //Act
+                dataRepository.AddProductCopy(productCopy);
+                ProductCopy firstCheck = dataRepository.GetProductCopyById(1);
+                dataRepository.DeleteProductCopy(productCopy);
+                ProductCopy secondCheck = dataRepository.GetProductCopyById(1);
+                //Assert
+                Assert.AreEqual(firstCheck, productCopy);
+                Assert.IsNull(secondCheck);
+            }
+            catch {
+                //Assert
+                Assert.Fail();
+            }
+        }
+
     }
 }
