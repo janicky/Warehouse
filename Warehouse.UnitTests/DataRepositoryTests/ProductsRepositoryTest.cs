@@ -15,7 +15,7 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
         [TestMethod]
         public void DataRepositoryProducts_ItemsExists() {
             //Assert
-            Assert.AreEqual(dataRepository.GetAllProducts().Count, 1);
+            Assert.AreEqual(dataRepository.GetAllProducts().Count, 3);
         }
 
         [TestMethod]
@@ -49,10 +49,10 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             //Arrenge
             Product clock = new Product("Rustic Granite Knife", 1);
             //Act
-            dataRepository.AddProduct(2, clock);
-            Product firstCheck = dataRepository.GetProductByIndex(2);
+            dataRepository.AddProduct(4, clock);
+            Product firstCheck = dataRepository.GetProductByIndex(4);
             dataRepository.DeleteProduct(clock);
-            Product secondCheck = dataRepository.GetProductByIndex(2);
+            Product secondCheck = dataRepository.GetProductByIndex(4);
             //Assert
             Assert.AreEqual(firstCheck, clock);
             Assert.IsNull(secondCheck);

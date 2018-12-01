@@ -29,6 +29,8 @@ namespace Warehouse.UnitTests {
 
         private void FillProducts() {
             products.Add(1, new Product("Synergistic Bronze Watch", 0.1));
+            products.Add(2, new Product("Heavy Duty Linen Plate", 20.5));
+            products.Add(3, new Product("Concrete Computer", 5));
         }
 
         private void FillProductCopies() {
