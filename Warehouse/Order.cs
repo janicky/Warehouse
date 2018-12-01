@@ -80,7 +80,13 @@ namespace Warehouse
         }
 
         public override string ToString() {
-            return id.ToString() + " " + employee.ToString() + " " + productCopy.ToString();
+            StringBuilder str = new StringBuilder();
+            str.Append(string.Format("Order: {0}, ${1} [{2}x]\n", orderDate, price, count));
+
+            if (employee != null) {
+                str.Append(employee);
+            }
+            return str.ToString();
         }
     }
 }
