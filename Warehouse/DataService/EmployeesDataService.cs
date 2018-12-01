@@ -14,7 +14,9 @@ namespace Warehouse {
         }
 
         public Employee AddEmployee(string firstName, string lastName) {
-            return new Employee(firstName, lastName);
+            Employee employee = new Employee(firstName, lastName);
+            repository.AddEmployee(employee);
+            return employee;
         }
 
     }
