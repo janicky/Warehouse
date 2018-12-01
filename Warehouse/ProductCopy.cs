@@ -60,6 +60,10 @@ namespace Warehouse
             return createdAt;
         }
 
+        public DateTimeOffset GetUpdatedAt() {
+            return createdAt;
+        }
+
         public void SetProduct(Product product) {
             this.product = product;
             Updated();

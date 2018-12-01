@@ -5,23 +5,25 @@ namespace Warehouse.UnitTests {
     public class ProductCopyTests {
 
         private ProductCopy productCopy;
-        private double price = 62.0;
-        private string description = "Short product description";
+        private DataRepository dataRepository;
 
         [TestInitialize]
         public void TestInitialize() {
-            Product product = new Product("Product name", 10.0);
-            productCopy = new ProductCopy(product, description, price, 1);
+            ProductCopy.ResetIndex();
+            dataRepository = new DataRepository(new TestDataSource());
+            productCopy = dataRepository.GetAllProductCopies()[0];
         }
         [TestMethod]
-        public void CreateInstance_TestMethods() {
+        public void ProductCopy_SetProduct() {
             // Arrange
-            // ...
-
+            Product product = dataRepository.GetAllProducts()[1];
+            Product newProduct = dataRepository.GetAllProducts()[2];
+            // Act
+            Product beforeSet = productCopy.GetProduct();
+            productCopy.SetProduct(newProduct);
             // Assert
-            Assert.AreEqual(productCopy.GetDescription(), description);
-            Assert.AreEqual(productCopy.GetPrice(), price);
-            Assert.AreEqual(productCopy.GetCount(), 1);
+            Assert.AreEqual(beforeSet, product);
+            Assert.AreEqual(productCopy.GetProduct(), newProduct);
         }
     }
 }
