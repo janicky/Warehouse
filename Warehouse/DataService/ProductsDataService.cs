@@ -15,5 +15,11 @@ namespace Warehouse {
         public Product FindProduct(Func<Product, bool> condition) {
             return repository.GetAllProducts().Values.First(condition);
         }
+
+        public Product AddProduct(int index, string name, double weight) {
+            Product product = new Product(name, weight);
+            repository.AddProduct(index, product);
+            return product;
+        }
     }
 }
