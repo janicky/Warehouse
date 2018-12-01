@@ -26,15 +26,5 @@ namespace Warehouse.UnitTests {
             Assert.AreEqual(beforeSet, product);
             Assert.AreEqual(productCopy.GetProduct(), newProduct);
         }
-
-        [TestMethod]
-        public void ProductCopy_UpdateDateTimeOnChange() {
-            // Arrange
-            DateTimeOffset dateTime = productCopy.GetUpdatedAt();
-            // Act
-            productCopy.SetDescription("New description and update datetime on change.");
-            // Arrange
-            Assert.AreNotEqual(dateTime, productCopy.GetUpdatedAt());
-        }
     }
 }
