@@ -83,7 +83,7 @@ namespace Warehouse {
         }
 
         public override string ToString() {
-            return name;
+            return string.Format("Product: {0} \n", name);
         }
     }
 }

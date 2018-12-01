@@ -29,7 +29,11 @@ namespace Warehouse
             order = null;
             createdAt = DateTimeOffset.Now;
             updatedAt = DateTimeOffset.Now;
+            product.AddProductCopy(this);
+        }
 
+        ~ProductCopy() {
+            product.RemoveProductCopy(this);
         }
 
         public static void ResetIndex() {
@@ -65,7 +69,9 @@ namespace Warehouse
         }
 
         public void SetProduct(Product product) {
+            this.product.RemoveProductCopy(this);
             this.product = product;
+            product.AddProductCopy(this);
             Updated();
         }
 
