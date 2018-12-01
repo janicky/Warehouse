@@ -27,8 +27,9 @@ namespace Warehouse.UnitTests {
         public void Employee_ValidIdIncrease() {
             // Arrange
             Employee employee = new Employee("Galen", "Erso");
+            int lastId = dataSource.GetEmployees()[dataSource.GetEmployees().Count - 1].GetId();
             // Assert
-            Assert.AreEqual(employee.GetId(), 1);
+            Assert.AreEqual(employee.GetId(), lastId + 1);
         }
     }
 }
