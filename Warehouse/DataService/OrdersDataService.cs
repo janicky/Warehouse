@@ -22,5 +22,9 @@ namespace Warehouse {
             repository.AddOrder(order);
             return order;
         }
+
+        public void UpdateOrder(Order order) {
+            repository.UpdateOrder(order);
+        }
     }
 }
