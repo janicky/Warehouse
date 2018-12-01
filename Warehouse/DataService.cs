@@ -7,5 +7,13 @@ using System.Text;
 namespace Warehouse {
     class DataService {
 
+        private DataRepository repository;
+
+        public DataService(DataRepository repository) {
+            this.repository = repository;
+        }
+
+
+
     }
 }
