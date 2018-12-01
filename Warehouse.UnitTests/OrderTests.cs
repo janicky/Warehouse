@@ -24,5 +24,16 @@ namespace Warehouse.UnitTests
                 Assert.IsTrue(order.GetPrice() > 0);
             }
         }
+
+        [TestMethod]
+        public void Order_NegativeCount() {
+            Assert.IsTrue(order.GetCount() >= 0);
+
+            order.SetCount(0);
+            Assert.IsTrue(order.GetCount() >= 0);
+
+            order.SetCount(-1);
+            Assert.IsTrue(order.GetCount() >= 0);
+        }
     }
 }
