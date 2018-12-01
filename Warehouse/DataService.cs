@@ -35,6 +35,9 @@ namespace Warehouse {
         public void DisplayProducts(IEnumerable<Product> products) {
             foreach (Product product in products) {
                 Console.WriteLine(product);
+                foreach (ProductCopy productCopy in product.GetProductCopies()) {
+                    Console.WriteLine(productCopy);
+                }
             }
         }
     }

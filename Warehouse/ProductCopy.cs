@@ -111,7 +111,13 @@ namespace Warehouse
         }
 
         public override string ToString() {
-            return product.GetName() + " " + description;
+            StringBuilder str = new StringBuilder();
+            str.Append(string.Format("ProductCopy: {0} ${1} [{2}x]\n", description, price, count));
+
+            if (order != null) {
+                str.Append(order);
+            }
+            return str.ToString();
         }
     }
 }
