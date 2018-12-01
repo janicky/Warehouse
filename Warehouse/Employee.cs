@@ -62,7 +62,7 @@ namespace Warehouse
         }
 
         public override string ToString() {
-            return firstName + " " + lastName;
+            return string.Format("Employee: #{0} {1} {2}\n", id, firstName, lastName);
         }
     }
 }
