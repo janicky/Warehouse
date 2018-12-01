@@ -27,5 +27,14 @@ namespace Warehouse {
             repository.UpdateProductCopy(productCopy);
         }
 
+        public bool DeleteProductCopy(Func<ProductCopy, bool> condition) {
+            try {
+                ProductCopy productCopy = FindProductCopy(condition);
+                return repository.DeleteProductCopy(productCopy);
+            } catch (Exception) {
+                return false;
+            }
+        }
+
     }
 }

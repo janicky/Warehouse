@@ -44,13 +44,12 @@ namespace Warehouse {
             }
         }
 
-        public void DeleteProductCopy(ProductCopy productCopy) {
+        public bool DeleteProductCopy(ProductCopy productCopy) {
             try {
-                bool deleted = dataContext.productCopies.Remove(productCopy);
-                if (!deleted) throw new Exception();
+                return dataContext.productCopies.Remove(productCopy);
             }
             catch (Exception) {
-                throw new NotImplementedException();
+                return false;
             }
         }
     }
