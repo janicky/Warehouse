@@ -31,5 +31,11 @@ namespace Warehouse {
             repository.AddOrder(order);
             return order;
         }
+
+        public void DisplayProducts(IEnumerable<Product> products) {
+            foreach (Product product in products) {
+                Console.WriteLine(product);
+            }
+        }
     }
 }
