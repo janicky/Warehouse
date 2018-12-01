@@ -42,15 +42,15 @@ namespace Warehouse {
         }
 
         private void HandleProductCopiesChange(object sender, NotifyCollectionChangedEventArgs e) {
-            Console.WriteLine("Orders list was changed!");
+            Console.WriteLine("Product copies list was changed!");
             if (e.NewItems != null) {
-                Console.WriteLine(string.Format("|- Orders added: {0}", e.NewItems.Count));
+                Console.WriteLine(string.Format("|- Product copies added: {0}", e.NewItems.Count));
                 foreach (ProductCopy productCopy in e.NewItems) {
                     Console.WriteLine(string.Format("|-- {0}", productCopy));
                 }
             }
             if (e.OldItems != null) {
-                Console.WriteLine(string.Format("|- Orders removed: {0}", e.OldItems.Count));
+                Console.WriteLine(string.Format("|- Product copies removed: {0}", e.OldItems.Count));
                 foreach (ProductCopy productCopy in e.OldItems) {
                     Console.WriteLine(string.Format("|-- {0}", productCopy));
                 }
