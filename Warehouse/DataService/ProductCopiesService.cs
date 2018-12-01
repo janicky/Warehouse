@@ -23,5 +23,9 @@ namespace Warehouse {
             return productCopy;
         }
 
+        public void UpdateProductCopy(ProductCopy productCopy) {
+            repository.UpdateProductCopy(productCopy);
+        }
+
     }
 }
