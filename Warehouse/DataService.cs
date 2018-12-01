@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,5 +18,8 @@ namespace Warehouse {
             return repository.GetAllProducts();
         }
 
+        public IEnumerable<Order> GetOrdersForEmployee(Employee employee) {
+            return repository.GetAllOrders().Where(e => e.GetEmployee() == employee);
+        }
     }
 }
