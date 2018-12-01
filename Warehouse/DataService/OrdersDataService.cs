@@ -26,5 +26,10 @@ namespace Warehouse {
         public void UpdateOrder(Order order) {
             repository.UpdateOrder(order);
         }
+
+        public bool DeleteOrder(Func<Order, bool> condition) {
+            Order order = FindOrder(condition);
+            return repository.DeleteOrder(order);
+        }
     }
 }
