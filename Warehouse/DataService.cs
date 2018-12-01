@@ -13,7 +13,9 @@ namespace Warehouse {
             this.repository = repository;
         }
 
-
+        public Dictionary<int, Product> GetAllProducts() {
+            return repository.GetAllProducts();
+        }
 
     }
 }
