@@ -19,13 +19,17 @@ namespace Warehouse {
             return employee;
         }
 
-        public bool DeleteEmployee(Func<Employee, bool> lambda) {
+        public bool DeleteEmployee(Func<Employee, bool> condition) {
             try {
-                Employee employee = repository.GetAllEmployees().First(lambda);
+                Employee employee = repository.GetAllEmployees().First(condition);
                 return repository.DeleteEmployee(employee);
             } catch (Exception) {
                 return false;
             }
+        }
+
+        public void UpdateEmployee(Employee employee) {
+            repository.UpdateEmployee(employee);
         }
     }
 }
