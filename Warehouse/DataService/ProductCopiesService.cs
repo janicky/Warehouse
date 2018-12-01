@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Warehouse {
+    public partial class DataService {
+
+        public void DisplayProductCopies(IEnumerable<ProductCopy> productCopies) {
+            foreach (ProductCopy productCopy in productCopies) {
+                Console.WriteLine(productCopy);
+            }
+        }
+
+    }
+}
