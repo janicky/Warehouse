@@ -13,5 +13,9 @@ namespace Warehouse {
             }
         }
 
+        public ProductCopy FindProductCopy(Func<ProductCopy, bool> condition) {
+            return repository.GetAllProductCopies().First(condition);
+        }
+
     }
 }
