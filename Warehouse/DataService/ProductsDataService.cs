@@ -21,5 +21,9 @@ namespace Warehouse {
             repository.AddProduct(index, product);
             return product;
         }
+
+        public void UpdateProduct(Product product) {
+            repository.UpdateProduct(product);
+        }
     }
 }
