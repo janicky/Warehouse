@@ -41,12 +41,11 @@ namespace Warehouse {
             }
         }
 
-        public void DeleteOrder(Order order) {
+        public bool DeleteOrder(Order order) {
             try {
-                bool deleted = dataContext.orders.Remove(order);
-                if (!deleted) throw new Exception();
+                return dataContext.orders.Remove(order);
             } catch(Exception) {
-                throw new NotImplementedException();
+                return false;
             }
         }
     }
