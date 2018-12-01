@@ -17,5 +17,11 @@ namespace Warehouse {
             return repository.GetAllProductCopies().First(condition);
         }
 
+        public ProductCopy AddProductCopy(Product product, string description, double price, int count) {
+            ProductCopy productCopy = new ProductCopy(product, description, price, count);
+            repository.AddProductCopy(productCopy);
+            return productCopy;
+        }
+
     }
 }
