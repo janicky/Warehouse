@@ -61,7 +61,7 @@ namespace Warehouse
         }
 
         public DateTimeOffset GetUpdatedAt() {
-            return createdAt;
+            return updatedAt;
         }
 
         public void SetProduct(Product product) {
@@ -84,7 +84,7 @@ namespace Warehouse
             Updated();
         }
 
-        public void Updated() {
+        private void Updated() {
             updatedAt = DateTimeOffset.Now;
         }
 
