@@ -28,6 +28,7 @@ namespace Warehouse {
 
         public Order AddOrder(Employee employee, ProductCopy productCopy) {
             Order order = new Order(employee, productCopy);
+            productCopy.SetOrder(order);
             repository.AddOrder(order);
             return order;
         }

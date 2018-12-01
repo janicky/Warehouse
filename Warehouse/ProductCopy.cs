@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    public class ProductCopy
-    {
+    public class ProductCopy {
         private static int index = 0;
 
         private int id;
@@ -15,7 +14,7 @@ namespace Warehouse
         private string description;
         private double price;
         private int count;
-        
+
         private Order order;
         private DateTimeOffset createdAt;
         private DateTimeOffset updatedAt;
@@ -73,6 +72,10 @@ namespace Warehouse
             this.product = product;
             product.AddProductCopy(this);
             Updated();
+        }
+
+        public void SetOrder(Order order) {
+            this.order = order;
         }
 
         public void SetDescription(string description) {
