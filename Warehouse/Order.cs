@@ -52,6 +52,10 @@ namespace Warehouse
             return count;
         }
 
+        public DateTimeOffset GetOrderDate() {
+            return orderDate;
+        }
+
         public void SetPrice(double price) {
             this.price = (price > 0 ? price : 1); ;
         }
