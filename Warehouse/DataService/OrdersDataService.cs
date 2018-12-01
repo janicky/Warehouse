@@ -12,5 +12,9 @@ namespace Warehouse {
                 Console.WriteLine(order);
             }
         }
+
+        public Order FindOrder(Func<Order, bool> condition) {
+            return repository.GetAllOrders().First(condition);
+        }
     }
 }
