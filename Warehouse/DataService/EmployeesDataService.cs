@@ -13,5 +13,9 @@ namespace Warehouse {
             }
         }
 
+        public Employee AddEmployee(string firstName, string lastName) {
+            return new Employee(firstName, lastName);
+        }
+
     }
 }
