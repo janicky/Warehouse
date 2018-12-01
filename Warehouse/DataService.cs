@@ -6,12 +6,21 @@ using System.Linq;
 using System.Text;
 
 namespace Warehouse {
-    class DataService {
+    public partial class DataService {
 
         private DataRepository repository;
 
         public DataService(DataRepository repository) {
             this.repository = repository;
+        }
+
+        public void DisplayProducts(IEnumerable<Product> products) {
+            foreach (Product product in products) {
+                Console.WriteLine(product);
+                foreach (ProductCopy productCopy in product.GetProductCopies()) {
+                    Console.WriteLine(productCopy);
+                }
+            }
         }
 
         public Dictionary<int, Product> GetAllProducts() {
@@ -33,13 +42,5 @@ namespace Warehouse {
             return order;
         }
 
-        public void DisplayProducts(IEnumerable<Product> products) {
-            foreach (Product product in products) {
-                Console.WriteLine(product);
-                foreach (ProductCopy productCopy in product.GetProductCopies()) {
-                    Console.WriteLine(productCopy);
-                }
-            }
-        }
     }
 }

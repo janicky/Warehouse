@@ -48,6 +48,7 @@
     <Compile Include="DataRepository\ProductsRepository.cs" />
     <Compile Include="DataRepository\ProductCopiesRepository.cs" />
     <Compile Include="DataService.cs" />
+    <Compile Include="DataService\EmployeesDataService.cs" />
     <Compile Include="IDataSource.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Order.cs" />
