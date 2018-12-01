@@ -21,8 +21,8 @@ namespace Warehouse
             this.id = (id != -1 ? id : index++);
             this.employee = employee;
             this.productCopy = productCopy;
-            this.price = price;
-            this.count = count;
+            this.price = (price > 0 ? price : 1);
+            this.count = (count >= 0 ? count : 0);
             orderDate = DateTimeOffset.Now;
         }
 
@@ -53,11 +53,11 @@ namespace Warehouse
         }
 
         public void SetPrice(double price) {
-            this.price = price;
+            this.price = (price > 0 ? price : 1); ;
         }
 
         public void SetCount(int count) {
-            this.count = count;
+            this.count = (count >= 0 ? count : 0);
         }
 
         public override bool Equals(object obj) {
