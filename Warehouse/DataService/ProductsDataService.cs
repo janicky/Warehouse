@@ -11,5 +11,9 @@ namespace Warehouse {
                 Console.WriteLine(product);
             }
         }
+
+        public Product FindProduct(Func<Product, bool> condition) {
+            return repository.GetAllProducts().Values.First(condition);
+        }
     }
 }
