@@ -41,12 +41,11 @@ namespace Warehouse {
             }
         }
 
-        public void DeleteEmployee(Employee employee) {
+        public bool DeleteEmployee(Employee employee) {
             try {
-                bool deleted = dataContext.employees.Remove(employee);
-                if (!deleted) throw new Exception();
+                return dataContext.employees.Remove(employee);
             } catch (Exception) {
-                throw new NotImplementedException();
+                return false;
             }
         }
     }
