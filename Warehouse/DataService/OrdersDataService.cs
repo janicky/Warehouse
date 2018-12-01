@@ -16,5 +16,11 @@ namespace Warehouse {
         public Order FindOrder(Func<Order, bool> condition) {
             return repository.GetAllOrders().First(condition);
         }
+
+        public Order AddOrder(Employee employee, ProductCopy productCopy, double price, int count) {
+            Order order = new Order(employee, productCopy, price, count);
+            repository.AddOrder(order);
+            return order;
+        }
     }
 }
