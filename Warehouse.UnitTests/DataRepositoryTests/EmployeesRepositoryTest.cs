@@ -17,7 +17,7 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             // Arrange
             DataRepository dataRepository = new DataRepository(new TestDataSource());
             // Assert
-            Assert.AreEqual(dataRepository.GetAllEmployees().Count, 1);
+            Assert.AreEqual(dataRepository.GetAllEmployees().Count, 4);
         }
 
         [TestMethod]
@@ -54,9 +54,9 @@ namespace Warehouse.UnitTests.DataRepositoryTests {
             Employee DarthSidious = new Employee("Darth", "Sidious");
             // Act
             dataRepository.AddEmployee(DarthSidious);
-            Employee firstCheck = dataRepository.GetEmployeeById(1);
+            Employee firstCheck = dataRepository.GetEmployeeById(DarthSidious.GetId());
             dataRepository.DeleteEmployee(DarthSidious);
-            Employee secondCheck = dataRepository.GetEmployeeById(1);
+            Employee secondCheck = dataRepository.GetEmployeeById(DarthSidious.GetId());
             // Assert
             Assert.AreEqual(firstCheck, DarthSidious);
             Assert.IsNull(secondCheck);

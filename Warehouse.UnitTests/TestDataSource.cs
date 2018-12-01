@@ -22,6 +22,9 @@ namespace Warehouse.UnitTests {
         // Data fill
         private void FillEmployees() {
             employees.Add(new Employee("Anakin", "Skywalker"));
+            employees.Add(new Employee("Mace", "Windu"));
+            employees.Add(new Employee("Chirrut", "Imwe"));
+            employees.Add(new Employee("Sheev", "Palpatine"));
         }
 
         private void FillProducts() {
