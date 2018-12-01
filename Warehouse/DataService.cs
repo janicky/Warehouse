@@ -26,6 +26,10 @@ namespace Warehouse {
             return repository.GetAllOrders().Where(e => e.GetOrderDate() >= from && e.GetOrderDate() <= to);
         }
 
-
+        public Order AddOrder(Employee employee, ProductCopy productCopy) {
+            Order order = new Order(employee, productCopy);
+            repository.AddOrder(order);
+            return order;
+        }
     }
 }

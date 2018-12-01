@@ -17,7 +17,7 @@ namespace Warehouse
         private double price;
         private int count;
 
-        public Order(Employee employee, ProductCopy productCopy, double price, int count, int id = -1){
+        public Order(Employee employee, ProductCopy productCopy, double price = 0, int count = 0, int id = -1){
             this.id = (id != -1 ? id : index++);
             this.employee = employee;
             this.productCopy = productCopy;
