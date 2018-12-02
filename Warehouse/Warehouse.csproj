@@ -59,13 +59,13 @@
     <Compile Include="Employee.cs" />
     <Compile Include="ProductCopy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ConstantDataSource.cs" />
+    <Compile Include="DataSources\ConstantDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataFiles\Employees.xml" />
-    <Content Include="DataFiles\Orders.xml" />
-    <Content Include="DataFiles\ProductCopies.xml" />
-    <Content Include="DataFiles\Products.xml" />
+    <Content Include="DataSources\DataFiles\Employees.xml" />
+    <Content Include="DataSources\DataFiles\Orders.xml" />
+    <Content Include="DataSources\DataFiles\ProductCopies.xml" />
+    <Content Include="DataSources\DataFiles\Products.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
