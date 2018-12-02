@@ -4,8 +4,20 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Warehouse {
+
+    [XmlRoot("Products")]
+    public class ProductList {
+        public ProductList() {
+            Products = new Dictionary<int, Product>();
+        }
+
+        [XmlElement("Product")]
+        public Dictionary<int, Product> Products { get; set; }
+    }
+
     public class Product {
 
         private static int index = 0;
