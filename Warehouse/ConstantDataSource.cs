@@ -41,7 +41,7 @@ namespace Warehouse
             employees.Add(new Employee("Han", "Solo"));
             employees.Add(new Employee("Padme", "Amidala"));
             employees.Add(new Employee("Rose", "Tico"));
-            employees.Add(new Employee("Ki-Adi-Mundi", ""));
+            employees.Add(new Employee("Ki-Adi-Mundi", "Amidala"));
             employees.Add(new Employee("Darth", "Vader"));
         }
 
@@ -81,6 +81,8 @@ namespace Warehouse
         }
 
         private void FillProductCopies() {
+            // Generated using Faker
+            // Github: [https://github.com/stympy/faker]
             productCopies.Add(new ProductCopy(products[0], "I'm not normally a praying man, but if you're up there, please save me, Superman!", 49.05, 8));
             productCopies.Add(new ProductCopy(products[1], "Son, if you really want something in this life, you have to work for it. Now quiet! They're about to announce the lottery numbers.", 90.06, 7));
             productCopies.Add(new ProductCopy(products[2], "You tried your best and you failed miserably. The lesson is: Never try.", 47.02, 2));
@@ -114,6 +116,8 @@ namespace Warehouse
         }
 
         private void FillOrders() {
+            // Generated using Faker
+            // Github: [https://github.com/stympy/faker]
             orders.Add(new Order(employees[2], productCopies[22], 21.07, 5));
             orders.Add(new Order(employees[11], productCopies[27], 48.09, 3));
             orders.Add(new Order(employees[3], productCopies[14], 16.07, 8));
