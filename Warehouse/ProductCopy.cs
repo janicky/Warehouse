@@ -15,6 +15,7 @@ namespace Warehouse
             ProductCopiesCollection = new ObservableCollection<ProductCopy>();
         }
 
+        [XmlElement("ProductCopy")]
         public ObservableCollection<ProductCopy> ProductCopiesCollection { get; set; }
     }
 
@@ -79,7 +80,9 @@ namespace Warehouse
         }
 
         ~ProductCopy() {
-            product.RemoveProductCopy(this);
+            if (product != null) {
+                product.RemoveProductCopy(this);
+            }
         }
 
         public static void ResetIndex() {
@@ -115,7 +118,9 @@ namespace Warehouse
         }
 
         public void SetProduct(Product product) {
-            this.product.RemoveProductCopy(this);
+            if (this.product != null) {
+                this.product.RemoveProductCopy(this);
+            }
             this.product = product;
             product.AddProductCopy(this);
             Updated();
