@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Products>
+  <Product>
+    <name>Mother Night</name>
+    <weight>23.08</weight>
+  </Product>
+  <Product>
+    <name>The Last Enemy</name>
+    <weight>48.03</weight>
+  </Product>
+  <Product>
+    <name>The Millstone</name>
+    <weight>56.08</weight>
+  </Product>
+  <Product>
+    <name>Time To Murder And Create</name>
+    <weight>50.05</weight>
+  </Product>
+  <Product>
+    <name>The Violent Bear It Away</name>
+    <weight>74.08</weight>
+  </Product>
+  <Product>
+    <name>The Heart Is a Lonely Hunter</name>
+    <weight>48.02</weight>
+  </Product>
+  <Product>
+    <name>The Road Less Traveled</name>
+    <weight>98.03</weight>
+  </Product>
+  <Product>
+    <name>Fear and Trembling</name>
+    <weight>60.02</weight>
+  </Product>
+  <Product>
+    <name>Eyeless in Gaza</name>
+    <weight>41.03</weight>
+  </Product>
+  <Product>
+    <name>A Handful of Dust</name>
+    <weight>53.05</weight>
+  </Product>
+  <Product>
+    <name>The Man Within</name>
+    <weight>39.07</weight>
+  </Product>
+  <Product>
+    <name>The Soldier's Art</name>
+    <weight>95.02</weight>
+  </Product>
+  <Product>
+    <name>The Mermaids Singing</name>
+    <weight>97.02</weight>
+  </Product>
+  <Product>
+    <name>Of Mice and Men</name>
+    <weight>93.09</weight>
+  </Product>
+  <Product>
+    <name>His Dark Materials</name>
+    <weight>73.07</weight>
+  </Product>
+  <Product>
+    <name>A Passage to India</name>
+    <weight>48.06</weight>
+  </Product>
+  <Product>
+    <name>Oh! To be in England</name>
+    <weight>49.02</weight>
+  </Product>
+  <Product>
+    <name>Ring of Bright Water</name>
+    <weight>97.03</weight>
+  </Product>
+  <Product>
+    <name>Nectar in a Sieve</name>
+    <weight>95.08</weight>
+  </Product>
+  <Product>
+    <name>Look to Windward</name>
+    <weight>95.08</weight>
+  </Product>
+  <Product>
+    <name>Have His Carcase</name>
+    <weight>49.07</weight>
+  </Product>
+  <Product>
+    <name>Behold the Man</name>
+    <weight>92.05</weight>
+  </Product>
+  <Product>
+    <name>A Confederacy of Dunces</name>
+    <weight>76.07</weight>
+  </Product>
+  <Product>
+    <name>The Heart Is a Lonely Hunter</name>
+    <weight>27.02</weight>
+  </Product>
+  <Product>
+    <name>An Acceptable Time</name>
+    <weight>75.05</weight>
+  </Product>
+  <Product>
+    <name>Far From the Madding Crowd</name>
+    <weight>32.09</weight>
+  </Product>
+  <Product>
+    <name>The Sun Also Rises</name>
+    <weight>86.06</weight>
+  </Product>
+  <Product>
+    <name>From Here to Eternity</name>
+    <weight>19.08</weight>
+  </Product>
+  <Product>
+    <name>From Here to Eternity</name>
+    <weight>82.03</weight>
+  </Product>
+  <Product>
+    <name>The Stars' Tennis Balls</name>
+    <weight>68.04</weight>
+  </Product>
+</Products>
