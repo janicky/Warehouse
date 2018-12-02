@@ -1,183 +1,183 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ProductCopies>
   <ProductCopy>
-    <productId>1</productId>
-    <description>That's it! You people have stood in my way long enough. I'm going to clown college!</description>
-    <price>12.02</price>
-    <count>0</count>
+    <ProductId>1</ProductId>
+    <Description>That's it! You people have stood in my way long enough. I'm going to clown college!</Description>
+    <Price>12.02</Price>
+    <Count>0</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>7</productId>
-    <description>Marriage is like a coffin and each kid is another nail.</description>
-    <price>50.04</price>
-    <count>1</count>
+    <ProductId>7</ProductId>
+    <Description>Marriage is like a coffin and each kid is another nail.</Description>
+    <Price>50.04</Price>
+    <Count>1</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>17</productId>
-    <description>Books are useless! I only ever read one book, To Kill A Mockingbird, and it gave me absolutely no insight on how to kill mockingbirds!</description>
-    <price>15.05</price>
-    <count>9</count>
+    <ProductId>17</ProductId>
+    <Description>Books are useless! I only ever read one book, To Kill A Mockingbird, and it gave me absolutely no insight on how to kill mockingbirds!</Description>
+    <Price>15.05</Price>
+    <Count>9</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>5</productId>
-    <description>Marriage is like a coffin and each kid is another nail.</description>
-    <price>10.05</price>
-    <count>6</count>
+    <ProductId>5</ProductId>
+    <Description>Marriage is like a coffin and each kid is another nail.</Description>
+    <Price>10.05</Price>
+    <Count>6</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>13</productId>
-    <description>You tried your best and you failed miserably. The lesson is: Never try.</description>
-    <price>43.04</price>
-    <count>9</count>
+    <ProductId>13</ProductId>
+    <Description>You tried your best and you failed miserably. The lesson is: Never try.</Description>
+    <Price>43.04</Price>
+    <Count>9</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>1</productId>
-    <description>Books are useless! I only ever read one book, To Kill A Mockingbird, and it gave me absolutely no insight on how to kill mockingbirds!</description>
-    <price>89.07</price>
-    <count>9</count>
+    <ProductId>1</ProductId>
+    <Description>Books are useless! I only ever read one book, To Kill A Mockingbird, and it gave me absolutely no insight on how to kill mockingbirds!</Description>
+    <Price>89.07</Price>
+    <Count>9</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>15</productId>
-    <description>When will I learn? The answers to life’s problems aren’t at the bottom of a bottle, they’re on TV!</description>
-    <price>78.06</price>
-    <count>0</count>
+    <ProductId>15</ProductId>
+    <Description>When will I learn? The answers to life’s problems aren’t at the bottom of a bottle, they’re on TV!</Description>
+    <Price>78.06</Price>
+    <Count>0</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>4</productId>
-    <description>D'oh!</description>
-    <price>44.03</price>
-    <count>1</count>
+    <ProductId>4</ProductId>
+    <Description>D'oh!</Description>
+    <Price>44.03</Price>
+    <Count>1</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>2</productId>
-    <description>D'oh!</description>
-    <price>81.06</price>
-    <count>3</count>
+    <ProductId>2</ProductId>
+    <Description>D'oh!</Description>
+    <Price>81.06</Price>
+    <Count>3</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>8</productId>
-    <description>To alcohol! The cause of, and solution to, all of life's problems.</description>
-    <price>76.03</price>
-    <count>0</count>
+    <ProductId>8</ProductId>
+    <Description>To alcohol! The cause of, and solution to, all of life's problems.</Description>
+    <Price>76.03</Price>
+    <Count>0</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>12</productId>
-    <description>Trust me, Bart, it's better to walk in on both your parents than on just one of them.</description>
-    <price>70.06</price>
-    <count>2</count>
+    <ProductId>12</ProductId>
+    <Description>Trust me, Bart, it's better to walk in on both your parents than on just one of them.</Description>
+    <Price>70.06</Price>
+    <Count>2</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>18</productId>
-    <description>What’s the point of going out? We’re just gonna wind up back home anyway.</description>
-    <price>15.06</price>
-    <count>7</count>
+    <ProductId>18</ProductId>
+    <Description>What’s the point of going out? We’re just gonna wind up back home anyway.</Description>
+    <Price>15.06</Price>
+    <Count>7</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>7</productId>
-    <description>Sorry, Mom, the mob has spoken.</description>
-    <price>13.08</price>
-    <count>5</count>
+    <ProductId>7</ProductId>
+    <Description>Sorry, Mom, the mob has spoken.</Description>
+    <Price>13.08</Price>
+    <Count>5</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>15</productId>
-    <description>Go out on a Tuesday? Who am I, Charlie Sheen?</description>
-    <price>39.01</price>
-    <count>0</count>
+    <ProductId>15</ProductId>
+    <Description>Go out on a Tuesday? Who am I, Charlie Sheen?</Description>
+    <Price>39.01</Price>
+    <Count>0</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>13</productId>
-    <description>To alcohol! The cause of, and solution to, all of life's problems.</description>
-    <price>11.03</price>
-    <count>0</count>
+    <ProductId>13</ProductId>
+    <Description>To alcohol! The cause of, and solution to, all of life's problems.</Description>
+    <Price>11.03</Price>
+    <Count>0</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>17</productId>
-    <description>What’s the point of going out? We’re just gonna wind up back home anyway.</description>
-    <price>32.03</price>
-    <count>7</count>
+    <ProductId>17</ProductId>
+    <Description>What’s the point of going out? We’re just gonna wind up back home anyway.</Description>
+    <Price>32.03</Price>
+    <Count>7</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>17</productId>
-    <description>Books are useless! I only ever read one book, To Kill A Mockingbird, and it gave me absolutely no insight on how to kill mockingbirds!</description>
-    <price>46.07</price>
-    <count>4</count>
+    <ProductId>17</ProductId>
+    <Description>Books are useless! I only ever read one book, To Kill A Mockingbird, and it gave me absolutely no insight on how to kill mockingbirds!</Description>
+    <Price>46.07</Price>
+    <Count>4</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>7</productId>
-    <description>Life is just one crushing defeat after another until you just wish Flanders was dead.</description>
-    <price>28.02</price>
-    <count>5</count>
+    <ProductId>7</ProductId>
+    <Description>Life is just one crushing defeat after another until you just wish Flanders was dead.</Description>
+    <Price>28.02</Price>
+    <Count>5</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>18</productId>
-    <description>When will I learn? The answers to life’s problems aren’t at the bottom of a bottle, they’re on TV!</description>
-    <price>17.06</price>
-    <count>7</count>
+    <ProductId>18</ProductId>
+    <Description>When will I learn? The answers to life’s problems aren’t at the bottom of a bottle, they’re on TV!</Description>
+    <Price>17.06</Price>
+    <Count>7</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>1</productId>
-    <description>To alcohol! The cause of, and solution to, all of life's problems.</description>
-    <price>93.06</price>
-    <count>9</count>
+    <ProductId>1</ProductId>
+    <Description>To alcohol! The cause of, and solution to, all of life's problems.</Description>
+    <Price>93.06</Price>
+    <Count>9</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>8</productId>
-    <description>I'm not normally a praying man, but if you're up there, please save me, Superman!</description>
-    <price>17.01</price>
-    <count>8</count>
+    <ProductId>8</ProductId>
+    <Description>I'm not normally a praying man, but if you're up there, please save me, Superman!</Description>
+    <Price>17.01</Price>
+    <Count>8</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>17</productId>
-    <description>Kill my boss? Do I dare live out the American dream?</description>
-    <price>51.06</price>
-    <count>3</count>
+    <ProductId>17</ProductId>
+    <Description>Kill my boss? Do I dare live out the American dream?</Description>
+    <Price>51.06</Price>
+    <Count>3</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>5</productId>
-    <description>You tried your best and you failed miserably. The lesson is: Never try.</description>
-    <price>65.03</price>
-    <count>4</count>
+    <ProductId>5</ProductId>
+    <Description>You tried your best and you failed miserably. The lesson is: Never try.</Description>
+    <Price>65.03</Price>
+    <Count>4</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>19</productId>
-    <description>If you pray to the wrong god, you might just make the right one madder and madder.</description>
-    <price>11.02</price>
-    <count>7</count>
+    <ProductId>19</ProductId>
+    <Description>If you pray to the wrong god, you might just make the right one madder and madder.</Description>
+    <Price>11.02</Price>
+    <Count>7</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>19</productId>
-    <description>Marriage is like a coffin and each kid is another nail.</description>
-    <price>25.07</price>
-    <count>2</count>
+    <ProductId>19</ProductId>
+    <Description>Marriage is like a coffin and each kid is another nail.</Description>
+    <Price>25.07</Price>
+    <Count>2</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>19</productId>
-    <description>It takes two to lie: one to lie and one to listen.</description>
-    <price>27.02</price>
-    <count>6</count>
+    <ProductId>19</ProductId>
+    <Description>It takes two to lie: one to lie and one to listen.</Description>
+    <Price>27.02</Price>
+    <Count>6</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>11</productId>
-    <description>What’s the point of going out? We’re just gonna wind up back home anyway.</description>
-    <price>67.04</price>
-    <count>6</count>
+    <ProductId>11</ProductId>
+    <Description>What’s the point of going out? We’re just gonna wind up back home anyway.</Description>
+    <Price>67.04</Price>
+    <Count>6</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>15</productId>
-    <description>When will I learn? The answers to life’s problems aren’t at the bottom of a bottle, they’re on TV!</description>
-    <price>85.04</price>
-    <count>4</count>
+    <ProductId>15</ProductId>
+    <Description>When will I learn? The answers to life’s problems aren’t at the bottom of a bottle, they’re on TV!</Description>
+    <Price>85.04</Price>
+    <Count>4</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>4</productId>
-    <description>Kill my boss? Do I dare live out the American dream?</description>
-    <price>99.07</price>
-    <count>6</count>
+    <ProductId>4</ProductId>
+    <Description>Kill my boss? Do I dare live out the American dream?</Description>
+    <Price>99.07</Price>
+    <Count>6</Count>
   </ProductCopy>
   <ProductCopy>
-    <productId>10</productId>
-    <description>Trust me, Bart, it's better to walk in on both your parents than on just one of them.</description>
-    <price>42.03</price>
-    <count>9</count>
+    <ProductId>10</ProductId>
+    <Description>Trust me, Bart, it's better to walk in on both your parents than on just one of them.</Description>
+    <Price>42.03</Price>
+    <Count>9</Count>
   </ProductCopy>
 </ProductCopies>
