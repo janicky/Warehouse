@@ -1,83 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Employees>
   <Employee>
-    <firstName>Ahsoka</firstName>
-    <lastName>Tano</lastName>
+    <FirstName>Ahsoka</FirstName>
+    <LastName>Tano</LastName>
   </Employee>
   <Employee>
-    <firstName>Finn</firstName>
-    <lastName>Pos</lastName>
+    <FirstName>Finn</FirstName>
+    <LastName>Pos</LastName>
   </Employee>
   <Employee>
-    <firstName>Darth</firstName>
-    <lastName>Vader</lastName>
+    <FirstName>Darth</FirstName>
+    <LastName>Vader</LastName>
   </Employee>
   <Employee>
-    <firstName>Maz</firstName>
-    <lastName>Kanata</lastName>
+    <FirstName>Maz</FirstName>
+    <LastName>Kanata</LastName>
   </Employee>
   <Employee>
-    <firstName>Han</firstName>
-    <lastName>Solo</lastName>
+    <FirstName>Han</FirstName>
+    <LastName>Solo</LastName>
   </Employee>
   <Employee>
-    <firstName>Saw</firstName>
-    <lastName>Gerrera</lastName>
+    <FirstName>Saw</FirstName>
+    <LastName>Gerrera</LastName>
   </Employee>
   <Employee>
-    <firstName>Lyra</firstName>
-    <lastName>Erso</lastName>
+    <FirstName>Lyra</FirstName>
+    <LastName>Erso</LastName>
   </Employee>
   <Employee>
-    <firstName>Jango</firstName>
-    <lastName>Fett</lastName>
+    <FirstName>Jango</FirstName>
+    <LastName>Fett</LastName>
   </Employee>
   <Employee>
-    <firstName>Chirrut</firstName>
-    <lastName>Imwe</lastName>
+    <FirstName>Chirrut</FirstName>
+    <LastName>Imwe</LastName>
   </Employee>
   <Employee>
-    <firstName>General</firstName>
-    <lastName>Hux</lastName>
+    <FirstName>General</FirstName>
+    <LastName>Hux</LastName>
   </Employee>
   <Employee>
-    <firstName>Shmi</firstName>
-    <lastName>Skywalker</lastName>
+    <FirstName>Shmi</FirstName>
+    <LastName>Skywalker</LastName>
   </Employee>
   <Employee>
-    <firstName>Greedo</firstName>
-    <lastName>Hux</lastName>
+    <FirstName>Greedo</FirstName>
+    <LastName>Hux</LastName>
   </Employee>
   <Employee>
-    <firstName>Greedo</firstName>
-    <lastName>Kan</lastName>
+    <FirstName>Greedo</FirstName>
+    <LastName>Kan</LastName>
   </Employee>
   <Employee>
-    <firstName>Darth</firstName>
-    <lastName>Sidious</lastName>
+    <FirstName>Darth</FirstName>
+    <LastName>Sidious</LastName>
   </Employee>
   <Employee>
-    <firstName>Maz</firstName>
-    <lastName>Kanata</lastName>
+    <FirstName>Maz</FirstName>
+    <LastName>Kanata</LastName>
   </Employee>
   <Employee>
-    <firstName>Mon</firstName>
-    <lastName>Mothma</lastName>
+    <FirstName>Mon</FirstName>
+    <LastName>Mothma</LastName>
   </Employee>
   <Employee>
-    <firstName>Saw</firstName>
-    <lastName>Gerrera</lastName>
+    <FirstName>Saw</FirstName>
+    <LastName>Gerrera</LastName>
   </Employee>
   <Employee>
-    <firstName>Mon</firstName>
-    <lastName>Mothma</lastName>
+    <FirstName>Mon</FirstName>
+    <LastName>Mothma</LastName>
   </Employee>
   <Employee>
-    <firstName>Han</firstName>
-    <lastName>Solo</lastName>
+    <FirstName>Han</FirstName>
+    <LastName>Solo</LastName>
   </Employee>
   <Employee>
-    <firstName>Asajj</firstName>
-    <lastName>Ventress</lastName>
+    <FirstName>Asajj</FirstName>
+    <LastName>Ventress</LastName>
   </Employee>
 </Employees>
