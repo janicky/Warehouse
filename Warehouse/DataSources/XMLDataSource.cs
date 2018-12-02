@@ -5,14 +5,16 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace Warehouse {
-    class XMLDataSource : IDataSource {
+    public class XMLDataSource : IDataSource {
         public List<Employee> GetEmployees() {
-            StreamReader reader = new StreamReader("./DataFiles/Employees/xml");
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Employee>));
-            return (List<Employee>) serializer.Deserialize(reader);
+            using (XmlReader reader = XmlReader.Create("W:/C#/Warehouse/Warehouse/DataSources/DataFiles/Employees.xml")) {
+                XmlSerializer serializer = new XmlSerializer(typeof(EmployeeList));
+                return ((EmployeeList)serializer.Deserialize(reader)).Employees;
+            }
         }
 
         public ObservableCollection<Order> GetOrders() {

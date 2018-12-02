@@ -59,6 +59,7 @@
     <Compile Include="TestDataSource.cs" />
     <Compile Include="EmployeeTest.cs" />
     <Compile Include="ProductTest.cs" />
+    <Compile Include="XMLDataSourceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

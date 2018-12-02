@@ -3,10 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Warehouse
 {
-    [Serializable()]
+    [XmlRoot("Employees")]
+    public class EmployeeList {
+        public EmployeeList() {
+            Employees = new List<Employee>();
+        }
+
+        [XmlElement("Employee")]
+        public List<Employee> Employees { get; set; }
+    }
+
     public class Employee
     {
         private static int index = 0;
@@ -15,7 +25,7 @@ namespace Warehouse
         private string firstName;
         private string lastName;
 
-        [System.Xml.Serialization.XmlElement("FirstName")]
+        [XmlAttribute("FirstName")]
         public string FirstName {
             get {
                 return firstName;
@@ -25,7 +35,7 @@ namespace Warehouse
             }
         }
 
-        [System.Xml.Serialization.XmlElement("LastName")]
+        [XmlAttribute("LastName")]
         public string LastName {
             get {
                 return lastName;
@@ -33,6 +43,10 @@ namespace Warehouse
             set {
                 SetLastName(value);
             }
+        }
+
+        private Employee() {
+
         }
 
         public Employee(string firstName, string lastName, int id = -1) {
