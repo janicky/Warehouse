@@ -1,11 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Warehouse
 {
+    [XmlRoot("ProductCopies")]
+    public class ProductCopies {
+
+        public ProductCopies() {
+            ProductCopiesCollection = new ObservableCollection<ProductCopy>();
+        }
+
+        public ObservableCollection<ProductCopy> ProductCopiesCollection { get; set; }
+    }
+
     public class ProductCopy {
         private static int index = 0;
 
@@ -18,6 +30,43 @@ namespace Warehouse
         private Order order;
         private DateTimeOffset createdAt;
         private DateTimeOffset updatedAt;
+
+        [XmlElement("ProductId")]
+        public int ProductId { get; set; }
+
+        [XmlElement("Description")]
+        public string Description {
+            get {
+                return GetDescription();
+            }
+            set {
+                SetDescription(value);
+            }
+        }
+
+        [XmlElement("Price")]
+        public double Price {
+            get {
+                return GetPrice();
+            }
+            set {
+                SetPrice(value);
+            }
+        }
+
+        [XmlElement("Count")]
+        public int Count {
+            get {
+                return GetCount();
+            }
+            set {
+                SetCount(value);
+            }
+        }
+
+        private ProductCopy() {
+
+        }
 
         public ProductCopy(Product product, string description, double price, int count, int id = -1) {
             this.id = (id != -1 ? id : index++);
