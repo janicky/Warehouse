@@ -4,7 +4,7 @@
     <ProductId>1</ProductId>
     <Description>That's it! You people have stood in my way long enough. I'm going to clown college!</Description>
     <Price>12.02</Price>
-    <Count>0</Count>
+    <Count>1</Count>
   </ProductCopy>
   <ProductCopy>
     <ProductId>7</ProductId>
@@ -58,7 +58,7 @@
     <ProductId>8</ProductId>
     <Description>To alcohol! The cause of, and solution to, all of life's problems.</Description>
     <Price>76.03</Price>
-    <Count>0</Count>
+    <Count>1</Count>
   </ProductCopy>
   <ProductCopy>
     <ProductId>12</ProductId>
@@ -82,13 +82,13 @@
     <ProductId>15</ProductId>
     <Description>Go out on a Tuesday? Who am I, Charlie Sheen?</Description>
     <Price>39.01</Price>
-    <Count>0</Count>
+    <Count>1</Count>
   </ProductCopy>
   <ProductCopy>
     <ProductId>13</ProductId>
     <Description>To alcohol! The cause of, and solution to, all of life's problems.</Description>
     <Price>11.03</Price>
-    <Count>0</Count>
+    <Count>1</Count>
   </ProductCopy>
   <ProductCopy>
     <ProductId>17</ProductId>

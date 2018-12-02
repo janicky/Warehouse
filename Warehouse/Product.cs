@@ -51,7 +51,7 @@ namespace Warehouse {
         }
 
         private Product() {
-            this.id = index++;
+            id = index++;
         }
 
         public Product(string name, double weight, int id = -1) {

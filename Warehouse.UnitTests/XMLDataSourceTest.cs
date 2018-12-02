@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Warehouse.UnitTests {
@@ -10,6 +11,9 @@ namespace Warehouse.UnitTests {
 
         [TestInitialize]
         public void TestInitialize() {
+            Employee.ResetIndex();
+            Product.ResetIndex();
+            ProductCopy.ResetIndex();
             dataSource = new XMLDataSource();
         }
 
@@ -32,6 +36,22 @@ namespace Warehouse.UnitTests {
             // Assert
             Assert.AreEqual(products.Count, 30);
             Assert.AreEqual(product, products[1]);
+        }
+
+        [TestMethod]
+        public void ProductCopiesDeserialization() {
+            // Arrange
+            ObservableCollection<ProductCopy> productCopies = dataSource.GetProductCopies();
+            ProductCopy productCopy = new ProductCopy(
+                id: 0,
+                product: dataSource.GetProducts()[2],
+                description: "That's it! You people have stood in my way long enough. I'm going to clown college!",
+                price: 12.02,
+                count: 1
+            );
+            // Assert
+            Assert.AreEqual(30, productCopies.Count);
+            Assert.AreEqual(productCopy, productCopies[0]);
         }
     }
 }

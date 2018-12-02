@@ -46,6 +46,10 @@ namespace Warehouse {
 
                 foreach (ProductCopy productCopy in productCopies) {
                     Product product = products.Values.First(e => e.GetId() == productCopy.ProductId);
+                    if (product == null) {
+                        productCopies.Remove(productCopy);
+                        continue;
+                    }
                     productCopy.SetProduct(product);
                 }
             }
@@ -59,11 +63,11 @@ namespace Warehouse {
             return products;
         }
 
-        public ObservableCollection<Order> GetOrders() {
-            throw new NotImplementedException();
+        public ObservableCollection<ProductCopy> GetProductCopies() {
+            return productCopies;
         }
 
-        public ObservableCollection<ProductCopy> GetProductCopies() {
+        public ObservableCollection<Order> GetOrders() {
             throw new NotImplementedException();
         }
     }

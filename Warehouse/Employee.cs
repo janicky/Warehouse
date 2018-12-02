@@ -45,7 +45,9 @@ namespace Warehouse
             }
         }
 
-        private Employee() { }
+        private Employee() {
+            id = index++;
+        }
 
         public Employee(string firstName, string lastName, int id = -1) {
             this.id = (id != -1 ? id : index++);
