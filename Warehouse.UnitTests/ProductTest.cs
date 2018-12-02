@@ -47,11 +47,12 @@ namespace Warehouse.UnitTests {
             // Arrange
             ObservableCollection<ProductCopy> copies = dataSource.GetProductCopies();
             int copiesBefore = product.GetProductCopies().Count;
+            copies.Add(new ProductCopy(product, "Product copy description", 0.5, 1));
             // Act
             product.SetProductCopies(copies);
             // Assert
-            Assert.AreEqual(copiesBefore, 0);
-            Assert.AreEqual(product.GetProductCopies().Count, 1);
+            Assert.AreEqual(copiesBefore, 1);
+            Assert.AreEqual(product.GetProductCopies().Count, 2);
         }
 
         [TestMethod]
@@ -62,8 +63,8 @@ namespace Warehouse.UnitTests {
             // Act
             product.AddProductCopy(productCopy);
             // Assert
-            Assert.AreEqual(copiesBefore, 0);
-            Assert.AreEqual(product.GetProductCopies().Count, 1);
+            Assert.AreEqual(copiesBefore, 1);
+            Assert.AreEqual(product.GetProductCopies().Count, 2);
         }
     }
 }

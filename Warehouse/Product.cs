@@ -63,6 +63,7 @@ namespace Warehouse {
         public void RemoveProductCopy(ProductCopy productCopy) {
             try {
                 bool deleted = productCopies.Remove(productCopy);
+                if (!deleted) throw new Exception();
             } catch (Exception) {
                 throw new NotImplementedException();
             }
