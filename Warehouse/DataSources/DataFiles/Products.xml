@@ -1,123 +1,123 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Products>
   <Product>
-    <name>Mother Night</name>
-    <weight>23.08</weight>
+    <Name>Mother Night</Name>
+    <Weight>23.08</Weight>
   </Product>
   <Product>
-    <name>The Last Enemy</name>
-    <weight>48.03</weight>
+    <Name>The Last Enemy</Name>
+    <Weight>48.03</Weight>
   </Product>
   <Product>
-    <name>The Millstone</name>
-    <weight>56.08</weight>
+    <Name>The Millstone</Name>
+    <Weight>56.08</Weight>
   </Product>
   <Product>
-    <name>Time To Murder And Create</name>
-    <weight>50.05</weight>
+    <Name>Time To Murder And Create</Name>
+    <Weight>50.05</Weight>
   </Product>
   <Product>
-    <name>The Violent Bear It Away</name>
-    <weight>74.08</weight>
+    <Name>The Violent Bear It Away</Name>
+    <Weight>74.08</Weight>
   </Product>
   <Product>
-    <name>The Heart Is a Lonely Hunter</name>
-    <weight>48.02</weight>
+    <Name>The Heart Is a Lonely Hunter</Name>
+    <Weight>48.02</Weight>
   </Product>
   <Product>
-    <name>The Road Less Traveled</name>
-    <weight>98.03</weight>
+    <Name>The Road Less Traveled</Name>
+    <Weight>98.03</Weight>
   </Product>
   <Product>
-    <name>Fear and Trembling</name>
-    <weight>60.02</weight>
+    <Name>Fear and Trembling</Name>
+    <Weight>60.02</Weight>
   </Product>
   <Product>
-    <name>Eyeless in Gaza</name>
-    <weight>41.03</weight>
+    <Name>Eyeless in Gaza</Name>
+    <Weight>41.03</Weight>
   </Product>
   <Product>
-    <name>A Handful of Dust</name>
-    <weight>53.05</weight>
+    <Name>A Handful of Dust</Name>
+    <Weight>53.05</Weight>
   </Product>
   <Product>
-    <name>The Man Within</name>
-    <weight>39.07</weight>
+    <Name>The Man Within</Name>
+    <Weight>39.07</Weight>
   </Product>
   <Product>
-    <name>The Soldier's Art</name>
-    <weight>95.02</weight>
+    <Name>The Soldier's Art</Name>
+    <Weight>95.02</Weight>
   </Product>
   <Product>
-    <name>The Mermaids Singing</name>
-    <weight>97.02</weight>
+    <Name>The Mermaids Singing</Name>
+    <Weight>97.02</Weight>
   </Product>
   <Product>
-    <name>Of Mice and Men</name>
-    <weight>93.09</weight>
+    <Name>Of Mice and Men</Name>
+    <Weight>93.09</Weight>
   </Product>
   <Product>
-    <name>His Dark Materials</name>
-    <weight>73.07</weight>
+    <Name>His Dark Materials</Name>
+    <Weight>73.07</Weight>
   </Product>
   <Product>
-    <name>A Passage to India</name>
-    <weight>48.06</weight>
+    <Name>A Passage to India</Name>
+    <Weight>48.06</Weight>
   </Product>
   <Product>
-    <name>Oh! To be in England</name>
-    <weight>49.02</weight>
+    <Name>Oh! To be in England</Name>
+    <Weight>49.02</Weight>
   </Product>
   <Product>
-    <name>Ring of Bright Water</name>
-    <weight>97.03</weight>
+    <Name>Ring of Bright Water</Name>
+    <Weight>97.03</Weight>
   </Product>
   <Product>
-    <name>Nectar in a Sieve</name>
-    <weight>95.08</weight>
+    <Name>Nectar in a Sieve</Name>
+    <Weight>95.08</Weight>
   </Product>
   <Product>
-    <name>Look to Windward</name>
-    <weight>95.08</weight>
+    <Name>Look to Windward</Name>
+    <Weight>95.08</Weight>
   </Product>
   <Product>
-    <name>Have His Carcase</name>
-    <weight>49.07</weight>
+    <Name>Have His Carcase</Name>
+    <Weight>49.07</Weight>
   </Product>
   <Product>
-    <name>Behold the Man</name>
-    <weight>92.05</weight>
+    <Name>Behold the Man</Name>
+    <Weight>92.05</Weight>
   </Product>
   <Product>
-    <name>A Confederacy of Dunces</name>
-    <weight>76.07</weight>
+    <Name>A Confederacy of Dunces</Name>
+    <Weight>76.07</Weight>
   </Product>
   <Product>
-    <name>The Heart Is a Lonely Hunter</name>
-    <weight>27.02</weight>
+    <Name>The Heart Is a Lonely Hunter</Name>
+    <Weight>27.02</Weight>
   </Product>
   <Product>
-    <name>An Acceptable Time</name>
-    <weight>75.05</weight>
+    <Name>An Acceptable Time</Name>
+    <Weight>75.05</Weight>
   </Product>
   <Product>
-    <name>Far From the Madding Crowd</name>
-    <weight>32.09</weight>
+    <Name>Far From the Madding Crowd</Name>
+    <Weight>32.09</Weight>
   </Product>
   <Product>
-    <name>The Sun Also Rises</name>
-    <weight>86.06</weight>
+    <Name>The Sun Also Rises</Name>
+    <Weight>86.06</Weight>
   </Product>
   <Product>
-    <name>From Here to Eternity</name>
-    <weight>19.08</weight>
+    <Name>From Here to Eternity</Name>
+    <Weight>19.08</Weight>
   </Product>
   <Product>
-    <name>From Here to Eternity</name>
-    <weight>82.03</weight>
+    <Name>From Here to Eternity</Name>
+    <Weight>82.03</Weight>
   </Product>
   <Product>
-    <name>The Stars' Tennis Balls</name>
-    <weight>68.04</weight>
+    <Name>The Stars' Tennis Balls</Name>
+    <Weight>68.04</Weight>
   </Product>
 </Products>
