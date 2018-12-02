@@ -25,7 +25,7 @@ namespace Warehouse
         private string firstName;
         private string lastName;
 
-        [XmlAttribute("FirstName")]
+        [XmlElement("FirstName")]
         public string FirstName {
             get {
                 return firstName;
@@ -35,7 +35,7 @@ namespace Warehouse
             }
         }
 
-        [XmlAttribute("LastName")]
+        [XmlElement("LastName")]
         public string LastName {
             get {
                 return lastName;
