@@ -11,11 +11,11 @@ namespace Warehouse {
     [XmlRoot("Products")]
     public class ProductList {
         public ProductList() {
-            Products = new Dictionary<int, Product>();
+            Products = new List<Product>();
         }
 
         [XmlElement("Product")]
-        public Dictionary<int, Product> Products { get; set; }
+        public List<Product> Products { get; set; }
     }
 
     public class Product {
@@ -26,6 +26,9 @@ namespace Warehouse {
         private string name;
         private double weight;
         private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
+
+        [XmlElement("Key")]
+        public int Key { get; set; }
 
         [XmlElement("Name")]
         public string Name {
