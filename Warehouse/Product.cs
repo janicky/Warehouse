@@ -27,6 +27,28 @@ namespace Warehouse {
         private double weight;
         private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
 
+        [XmlElement("Name")]
+        public string Name {
+            get {
+                return GetName();
+            }
+            set {
+                SetName(value);
+            }
+        }
+
+        [XmlElement("Weight")]
+        public double Weight {
+            get {
+                return GetWeight();
+            }
+            set {
+                SetWeight(value);
+            }
+        }
+
+        private Product() { }
+
         public Product(string name, double weight, int id = -1) {
             this.id = (id != -1 ? id : index++);
             this.name = name;
