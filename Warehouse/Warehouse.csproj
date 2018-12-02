@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataFiles\Employees.xml" />
+    <Content Include="DataFiles\ProductCopies.xml" />
     <Content Include="DataFiles\Products.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
