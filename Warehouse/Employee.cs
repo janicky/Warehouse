@@ -28,7 +28,7 @@ namespace Warehouse
         [XmlElement("FirstName")]
         public string FirstName {
             get {
-                return firstName;
+                return GetFirstName();
             }
             set {
                 SetFirstName(value);
@@ -38,16 +38,14 @@ namespace Warehouse
         [XmlElement("LastName")]
         public string LastName {
             get {
-                return lastName;
+                return GetLastName();
             }
             set {
                 SetLastName(value);
             }
         }
 
-        private Employee() {
-
-        }
+        private Employee() { }
 
         public Employee(string firstName, string lastName, int id = -1) {
             this.id = (id != -1 ? id : index++);
