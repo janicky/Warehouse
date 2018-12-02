@@ -10,26 +10,38 @@ using System.Xml.Serialization;
 
 namespace Warehouse {
     public class XMLDataSource : IDataSource {
-        public List<Employee> GetEmployees() {
+
+        private List<Employee> employees = new List<Employee>();
+        private Dictionary<int, Product> products = new Dictionary<int, Product>();
+
+        public XMLDataSource() {
+            FillEmployees();
+        }
+
+        public void FillEmployees() {
             using (XmlReader reader = XmlReader.Create("W:/C#/Warehouse/Warehouse/DataSources/DataFiles/Employees.xml")) {
                 XmlSerializer serializer = new XmlSerializer(typeof(EmployeeList));
-                return ((EmployeeList)serializer.Deserialize(reader)).Employees;
+                employees = ((EmployeeList)serializer.Deserialize(reader)).Employees;
             }
         }
-    
-        public Dictionary<int, Product> GetProducts() {
+
+        public void FillProducts() {
             using (XmlReader reader = XmlReader.Create("W:/C#/Warehouse/Warehouse/DataSources/DataFiles/Products.xml")) {
                 XmlSerializer serializer = new XmlSerializer(typeof(ProductList));
 
-                List<Product> products = ((ProductList)serializer.Deserialize(reader)).Products;
-                Dictionary<int, Product> dictionary = new Dictionary<int, Product>();
-
-                foreach (Product product in products) {
-                    dictionary.Add(product.Key, product);
+                List<Product> productsList = ((ProductList)serializer.Deserialize(reader)).Products;
+                foreach (Product product in productsList) {
+                    products.Add(product.Key, product);
                 }
-
-                return dictionary;
             }
+        }
+
+        public List<Employee> GetEmployees() {
+            return employees;
+        }
+    
+        public Dictionary<int, Product> GetProducts() {
+            return products;
         }
 
         public ObservableCollection<Order> GetOrders() {
