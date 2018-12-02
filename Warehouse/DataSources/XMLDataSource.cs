@@ -13,9 +13,12 @@ namespace Warehouse {
 
         private List<Employee> employees = new List<Employee>();
         private Dictionary<int, Product> products = new Dictionary<int, Product>();
+        private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
 
         public XMLDataSource() {
             FillEmployees();
+            FillProducts();
+            FillProductCopies();
         }
 
         public void FillEmployees() {
@@ -32,6 +35,18 @@ namespace Warehouse {
                 List<Product> productsList = ((ProductList)serializer.Deserialize(reader)).Products;
                 foreach (Product product in productsList) {
                     products.Add(product.Key, product);
+                }
+            }
+        }
+
+        public void FillProductCopies() {
+            using (XmlReader reader = XmlReader.Create("W:/C#/Warehouse/Warehouse/DataSources/DataFiles/ProductCopies.xml")) {
+                XmlSerializer serializer = new XmlSerializer(typeof(ProductCopies));
+                productCopies = ((ProductCopies)serializer.Deserialize(reader)).ProductCopiesCollection;
+
+                foreach (ProductCopy productCopy in productCopies) {
+                    Product product = products.Values.First(e => e.GetId() == productCopy.ProductId);
+                    productCopy.SetProduct(product);
                 }
             }
         }

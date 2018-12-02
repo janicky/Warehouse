@@ -64,9 +64,7 @@ namespace Warehouse
             }
         }
 
-        private ProductCopy() {
-
-        }
+        private ProductCopy() { }
 
         public ProductCopy(Product product, string description, double price, int count, int id = -1) {
             this.id = (id != -1 ? id : index++);
