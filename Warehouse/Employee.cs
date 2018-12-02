@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
+    [Serializable()]
     public class Employee
     {
         private static int index = 0;
@@ -13,6 +14,26 @@ namespace Warehouse
         private int id;
         private string firstName;
         private string lastName;
+
+        [System.Xml.Serialization.XmlElement("FirstName")]
+        public string FirstName {
+            get {
+                return firstName;
+            }
+            set {
+                SetFirstName(value);
+            }
+        }
+
+        [System.Xml.Serialization.XmlElement("LastName")]
+        public string LastName {
+            get {
+                return lastName;
+            }
+            set {
+                SetLastName(value);
+            }
+        }
 
         public Employee(string firstName, string lastName, int id = -1) {
             this.id = (id != -1 ? id : index++);
