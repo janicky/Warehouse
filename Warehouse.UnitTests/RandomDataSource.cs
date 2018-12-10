@@ -13,8 +13,17 @@ namespace Warehouse.UnitTests {
         private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
         private ObservableCollection<Order> orders = new ObservableCollection<Order>();
 
-        public RandomDataSource() {
+        private int multiplier;
 
+        public RandomDataSource(int multiplier = 1) {
+            this.multiplier = multiplier;
+            FillEmployees();
+        }
+
+        public void FillEmployees() {
+            for (int i = 0; i < multiplier * 100; i++) {
+                employees.Add(new Employee(Faker.Name.First(), Faker.Name.Last()));
+            }
         }
 
         // Getters
