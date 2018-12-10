@@ -19,7 +19,9 @@ namespace Warehouse.UnitTests {
 
         public RandomDataSource(int multiplier = 1) {
             this.multiplier = multiplier;
+
             FillEmployees();
+            FillProducts();
         }
 
         public void FillEmployees() {
@@ -31,6 +33,13 @@ namespace Warehouse.UnitTests {
         public void FillProducts() {
             for (int i = 0; i < multiplier * 5; i++) {
                 products.Add((i + 1), new Product(Faker.Company.Name(), rng.NextDouble()));
+            }
+        }
+
+        public void FillProductCopies() {
+            for (int i = 0; i < multiplier * 20; i++) {
+                Product product = products[rng.Next(products.Count)];
+                productCopies.Add(new ProductCopy(product, Faker.Lorem.Sentence(), rng.NextDouble(), rng.Next()));
             }
         }
 
