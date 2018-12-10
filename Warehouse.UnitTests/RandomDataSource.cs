@@ -37,16 +37,19 @@ namespace Warehouse.UnitTests {
         }
 
         public void FillProductCopies() {
+            Product product;
             for (int i = 0; i < multiplier * 20; i++) {
-                Product product = products[rng.Next(products.Count)];
+                product = products[rng.Next(products.Count)];
                 productCopies.Add(new ProductCopy(product, Faker.Lorem.Sentence(), rng.NextDouble(), rng.Next()));
             }
         }
 
         public void FillOrders() {
+            Employee employee;
+            ProductCopy productCopy;
             for (int i = 0; i < multiplier * 40; i++) {
-                Employee employee = employees[rng.Next(employees.Count)];
-                ProductCopy productCopy = productCopies[rng.Next(productCopies.Count)];
+                employee = employees[rng.Next(employees.Count)];
+                productCopy = productCopies[rng.Next(productCopies.Count)];
                 orders.Add(new Order(employee, productCopy));
             }
         }
