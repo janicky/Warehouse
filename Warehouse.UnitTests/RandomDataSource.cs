@@ -43,6 +43,14 @@ namespace Warehouse.UnitTests {
             }
         }
 
+        public void FillOrders() {
+            for (int i = 0; i < multiplier * 40; i++) {
+                Employee employee = employees[rng.Next(employees.Count)];
+                ProductCopy productCopy = productCopies[rng.Next(productCopies.Count)];
+                orders.Add(new Order(employee, productCopy));
+            }
+        }
+
         // Getters
         public List<Employee> GetEmployees() {
             return employees;
