@@ -13,6 +13,8 @@ namespace Warehouse.UnitTests {
         private ObservableCollection<ProductCopy> productCopies = new ObservableCollection<ProductCopy>();
         private ObservableCollection<Order> orders = new ObservableCollection<Order>();
 
+        private Random rng = new Random();
+
         private int multiplier;
 
         public RandomDataSource(int multiplier = 1) {
@@ -21,8 +23,14 @@ namespace Warehouse.UnitTests {
         }
 
         public void FillEmployees() {
-            for (int i = 0; i < multiplier * 100; i++) {
+            for (int i = 0; i < multiplier * 1; i++) {
                 employees.Add(new Employee(Faker.Name.First(), Faker.Name.Last()));
+            }
+        }
+
+        public void FillProducts() {
+            for (int i = 0; i < multiplier * 5; i++) {
+                products.Add((i + 1), new Product(Faker.Company.Name(), rng.NextDouble()));
             }
         }
 
