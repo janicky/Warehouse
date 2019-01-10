@@ -25,7 +25,7 @@ namespace Warehouse.UnitTests {
         public void PerformanceTestOne() {
             // 66 * 1000 = 66 000 objects
             var elapsed = Time(() => new DataRepository(new RandomDataSource(1000)));
-            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(400));
+            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(500));
             TestContext.WriteLine(elapsed.ToString());
         }
 
@@ -33,7 +33,7 @@ namespace Warehouse.UnitTests {
         public void PerformanceTestTwo() {
             // 66 * 5000 = 330 000 objects
             var elapsed = Time(() => new DataRepository(new RandomDataSource(5000)));
-            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(1900));
+            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(2500));
             TestContext.WriteLine(elapsed.ToString());
         }
 
@@ -41,7 +41,7 @@ namespace Warehouse.UnitTests {
         public void PerformanceTestThree() {
             // 66 * 6000 = 396 000 objects
             var elapsed = Time(() => new DataRepository(new RandomDataSource(6000)));
-            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(2200));
+            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(3500));
             TestContext.WriteLine(elapsed.ToString());
         }
 
@@ -49,7 +49,7 @@ namespace Warehouse.UnitTests {
         public void PerformanceTestFour() {
             // 66 * 6500 = 429 000 objects
             var elapsed = Time(() => new DataRepository(new RandomDataSource(6500)));
-            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(2400));
+            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(4500));
             TestContext.WriteLine(elapsed.ToString());
         }
     }
