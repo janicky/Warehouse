@@ -44,7 +44,6 @@
     <Compile Include="ConstantDataSource.cs" />
     <Compile Include="IDataSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XMLDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Warehouse\Warehouse.csproj">
