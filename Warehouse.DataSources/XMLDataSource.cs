@@ -23,14 +23,14 @@ namespace Warehouse.DataSources {
         }
 
         public void FillEmployees() {
-            using (XmlReader reader = XmlReader.Create("W:/C#/Warehouse/Warehouse.DataSources/DataFiles/Employees.xml")) {
+            using (XmlReader reader = XmlReader.Create(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())) + "/DataFiles/Employees.xml")) {
                 XmlSerializer serializer = new XmlSerializer(typeof(EmployeeList));
                 employees = ((EmployeeList)serializer.Deserialize(reader)).Employees;
             }
         }
 
         public void FillProducts() {
-            using (XmlReader reader = XmlReader.Create("W:/C#/Warehouse/Warehouse.DataSources/DataFiles/Products.xml")) {
+            using (XmlReader reader = XmlReader.Create(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())) + "/DataFiles/Products.xml")) {
                 XmlSerializer serializer = new XmlSerializer(typeof(ProductList));
 
                 List<Product> productsList = ((ProductList)serializer.Deserialize(reader)).Products;
@@ -41,7 +41,7 @@ namespace Warehouse.DataSources {
         }
 
         public void FillProductCopies() {
-            using (XmlReader reader = XmlReader.Create("W:/C#/Warehouse/Warehouse.DataSources/DataFiles/ProductCopies.xml")) {
+            using (XmlReader reader = XmlReader.Create(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())) + "/DataFiles/ProductCopies.xml")) {
                 XmlSerializer serializer = new XmlSerializer(typeof(ProductCopies));
                 productCopies = ((ProductCopies)serializer.Deserialize(reader)).ProductCopiesCollection;
 
