@@ -25,7 +25,7 @@ namespace Warehouse.UnitTests {
         public void PerformanceTestOne() {
             // 66 * 1000 = 66 000 objects
             var elapsed = Time(() => new DataRepository(new RandomDataSource(1000)));
-            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(500));
+            Assert.IsTrue(elapsed < TimeSpan.FromMilliseconds(1000));
             TestContext.WriteLine(elapsed.ToString());
         }
 

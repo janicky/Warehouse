@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Warehouse.Model;
 
 namespace Warehouse.UnitTests {
     [TestClass]

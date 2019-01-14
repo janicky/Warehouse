@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Warehouse.Model;
 
 namespace Warehouse.UnitTests {
     class TestDataSource : IDataSource {

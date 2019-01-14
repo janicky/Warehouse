@@ -70,6 +70,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Warehouse.Model\Warehouse.Model.csproj">
+      <Project>{f07c07d4-0c74-42ad-9db6-bca53caeac53}</Project>
+      <Name>Warehouse.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Warehouse\Warehouse.csproj">
       <Project>{13ebc9f5-7729-40ec-84f8-89cbbac1f588}</Project>
       <Name>Warehouse</Name>
