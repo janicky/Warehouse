@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Warehouse.Model;
+using Warehouse.DataSources;
 
 namespace Warehouse.UnitTests {
     [TestClass]
